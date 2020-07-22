@@ -1,0 +1,41 @@
+footer {
+    @include paddinglr;
+
+    .footerLogo {
+        img {
+            width: 100%;
+        }
+    }
+
+
+
+
+}
+
+.patreon {
+    background: #B1B1B1;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    margin: 32px 0px;
+    height: 100%;
+}
+
+.bottomFooter {
+    color: white;
+    background: $secondaryColor;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.footerLista {
+    margin: 7px 2px;
+
+    li {
+
+        a {
+            color: $secondaryColor;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@mixin paddinglr {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+@mixin padding {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+@mixin marginY {
+    margin-top: 4%;
+    margin-bottom: 6%;
+    margin-left: 0;
+    margin-right: 0;
+}

@@ -1,0 +1,106 @@
+@extends('layouts.main')
+@section('content')
+<div class="my-5">
+    
+        <section class="leftView">
+            <div class="single_episode my-2">
+                <div class="single_episode-body">
+                    <h5 class="single_episode-sub_title my-3 font-weight-bold">{{$epizoda->sezona->title}}</h5>
+                  
+                    <h5 class="single_episode-title mb-4 font-weight-bold"><a href="#">{{$epizoda->title}}</a></h5>
+                    <div class="product-filter-icons mb-5">
+                        <a href="#" class="facebook-bg" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="pinterest-bg" target="_blank" ><i class="fa fa-instagram"></i></a>
+
+                </div>
+                    <div class="single_episode-desc"><p>{{$epizoda->description}}</p>
+                     </div>
+                     <a class="single_episode-img" href="#"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
+
+                </div>
+            </div>
+{{--             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ --}}    
+                @if ($epizoda->yt_url)
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{$epizoda->yt_url}}"></iframe>
+                </div>
+
+                @endif       
+<div class="scDiv">
+                {!!$epizoda->sc_url!!}
+                    
+                    
+                    
+            </div>
+
+{{--             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ --}}   
+ </section>
+    <section class="rightView">
+        <div class="single_episode my-2">
+            <section class="tabSezoneInfo"><ul class="tabs clearfix" data-tabgroup="first-tab-group">
+
+                @foreach ($sezone as $sezona)
+                <li><a href="#{{$sezona->id}} ">
+                    <p>
+                   @php
+												
+                        echo substr($sezona->title, 0, 9);
+                    @endphp </p>
+              </a></li>
+                @endforeach
+      
+              </ul>
+              <section id="first-tab-group" class="tabgroup">
+                @foreach ($sezone as $sezona)
+
+                          <div id="{{$sezona->id}}">
+                             <div  class="wrap-bg">
+                                  
+                                  <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mbt30">
+                                        <!-- 1 -->
+                                        <div class="single-features-light"><!-- single features -->
+                                            <!-- uses solid style -->
+                                            <h5>
+                                                @php
+												
+                                                echo substr($sezona->title, 0, 12);
+                                            @endphp 
+                                           
+                                            </h5>
+                                            @foreach ($sezona->epizoda as $epizoda)
+                                                <div class="single-features-light">
+                                                    <div class="episode my-2">
+                                                    <a class="episode-img" href="/epizoda/{{$epizoda->id}}"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
+                                                    <div class="episode-body">
+                                                        <h6 class="episode-title font-weight-bold"><a href="/epizoda/{{$epizoda->id}}">
+                                                            @php
+												
+                                                            echo substr($epizoda->title, 0, 10);
+                                                        @endphp ...
+                                                  </a></h6>
+                                                        
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            @endforeach
+                                        </div><!-- end single features -->
+                                    </div>
+                                    </div>
+                                 
+                                  </div>
+                              </div>
+
+                              @endforeach
+                           
+              
+              </section>
+                </section>
+
+        </div>
+</section>
+</div>
+@endsection

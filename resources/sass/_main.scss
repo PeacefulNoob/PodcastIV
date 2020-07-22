@@ -1,0 +1,266 @@
+.main {
+    @include paddinglr();
+
+    .mainTekst {
+        width: 100%;
+    }
+
+}
+
+.overlayHome {
+    height: 100%;
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#8B8B8B00), color-stop(61%, #00000080), to(#000000C4)) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #8B8B8B00 0%, #00000080 85%, #000000C4 100%) 0% 0% no-repeat padding-box;
+}
+
+.homePic {
+    background-image: url("../images/Homepage_cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 70px);
+}
+
+.buttonSeason {
+    background: transparent;
+    color: white;
+    display: inline;
+    padding: 7px 25px;
+    border: 2px solid white;
+    font-size: 16px;
+    letter-spacing: 2.1px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    border-radius: 0px !important;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px;
+    font-weight: bold;
+
+    &:hover {
+        background: #ffffff;
+        color: black;
+    }
+}
+
+.slika {
+    margin: 5px;
+
+    img {
+        transition: 0.4s ease;
+
+    }
+
+    &:hover img {
+        transform: scale(1.05);
+
+    }
+}
+
+.homeButtons {
+    position: absolute;
+    bottom: 1%;
+    left: 0%;
+    width: 100%;
+
+    .row {
+        width: 100%;
+        @include padding();
+
+    }
+}
+
+.div1 {
+    @include padding();
+
+    background: $secondaryColor;
+
+    .row {
+        width: 100%;
+        @include marginY();
+
+    }
+
+}
+
+.hafter {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        right: 0;
+        height: 0.1px;
+        border-top: 3px solid $primaryColor;
+        z-index: 1;
+        width: 70px;
+    }
+}
+
+.hafterGrey {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        right: 0;
+        height: 0.1px;
+        border-top: 3px solid $greyColor;
+        z-index: 1;
+        width: 70px;
+    }
+}
+
+.post {
+    height: 100%;
+
+    .post-img {
+        display: block;
+        -webkit-transition: 0.2s opacity;
+        transition: 0.2s opacity;
+
+        img {
+            height: 22vh;
+            object-fit: cover;
+        }
+    }
+
+    .post-meta {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}
+
+.post.post-row {
+
+    .post-body {
+        margin-left: calc(40% + 30px);
+        height: 100%;
+        position: relative;
+        padding: 2%;
+
+        .post-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            a {
+                color: $mainFontColor;
+
+            }
+
+
+        }
+
+        .post-site {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .post-readMore {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: 20%;
+                -webkit-transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%);
+                right: 0;
+                height: 0.1px;
+                border-top: 3px solid #F5B52B;
+                z-index: 1;
+                width: 33px;
+            }
+
+            a {
+                color: $mainFontColor;
+            }
+        }
+
+        .post-writer {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            a {
+                color: $primaryColor;
+            }
+        }
+
+
+        .post-desc {
+            margin-top: 10%;
+            margin-bottom: 10%;
+
+            height: 50%;
+            position: relative;
+            padding: 1px;
+        }
+    }
+
+    .post-img {
+        width: 40%;
+        float: left;
+    }
+
+
+}
+
+.postDiv {
+
+    @include paddinglr();
+
+    .row {
+        width: 100%;
+        @include marginY();
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .post-body {
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 35px;
+        margin-left: 0px !important;
+        height: auto !important;
+    }
+
+    .post.post-row .post-img {
+        width: 100%;
+        float: none;
+
+
+    }
+
+    .post-title {
+        position: relative !important;
+    }
+
+    .post-readMore {
+        position: relative !important;
+    }
+
+}
+
+.slImage {
+    height: 100vh !important;
+    object-fit: cover;
+}
+
+.pogledajSve {
+    border-bottom: 1px solid $greyColor;
+    padding-bottom: 3%;
+}
