@@ -1,11 +1,16 @@
 @mixin paddinglr {
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+@mixin paddinglrB {
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 @mixin padding {
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 2%;
     padding-bottom: 2%;
 }

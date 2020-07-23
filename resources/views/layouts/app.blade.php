@@ -36,7 +36,6 @@
             @yield('content')
         </main>
     </div>
-    @include('layouts.footer')
         {{-- SKRIPTE .////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--}}
 		<!-- JQuery js-->
 		<script src="/assets/js/jquery-3.2.1.min.js"></script>

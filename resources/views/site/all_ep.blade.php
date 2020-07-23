@@ -47,26 +47,34 @@
             
         <div class="row">
             <div class="col-md-12 my-1">
-                <div class="post post-row">
-                    <a class="post-img" href="/epizoda/{{$epizoda->id}}"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Epizoda Slika"></a>
-                    <div class="post-body">
-                        <h5 class="post-title font-weight-bold"><a href="/epizoda/{{$epizoda->id}}">
-                            @php
-												
-                            echo substr($epizoda->title, 0, 60);
-                        @endphp 
-                            
-                       </a></h5>
-                        <p class="post-readMore font-weight-bold"><a href="/epizoda/{{$epizoda->id}}"> Procitaj Vise</a></p>
-                        <div class="post-desc">
-                        <p class="">@php
-												
-                            echo substr($epizoda->description, 0, 100);
-                        @endphp ...</p>
-                  
-                     </div>
+                <div class="episode my-2 d-flex">
+                    <a class="episode-img" href="/epizoda/{{ $epizoda->id }}"><img
+                            src="/assets/images/epizoda/{{ $epizoda->image }}" alt="Episode Image"></a>
+                    <div class="episode-body ">
+                        <div class="d-flex">
+                            <h6 class="episode-sub_title ghost font-weight-bold">
+                                {{ $sezona->title }}</h6>
+                            <div class="share-button"><img src="/assets/images/Share-ikonica.svg" alt="">
+                            </div>
+
+                        </div>
+                        <h5 class="episode-title mt-1 mb-3"><a href="/epizoda/{{ $epizoda->id }}">
+                                @php
+                                    echo substr($epizoda->title, 0, 60);
+                                @endphp
+                            </a>
+                        </h5>
+                        <div class="episode-desc mb-1">
+                            <p class="ghost">@php
+
+                                echo substr($epizoda->description, 0, 350);
+                                           @endphp... </p>
+
+                           </div>
+                        <div class="soundcloud-main"> {!!$epizoda->sc_url!!}</div>
+                        <div class="episode-guest"> Gost emisije : {{ $epizoda->guest1 }}</div>
                     </div>
-                </div>
+             </div>
             </div>
     </div>
     @endforeach

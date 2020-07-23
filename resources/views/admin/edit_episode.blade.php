@@ -26,6 +26,14 @@
                             <input type="text" name="title" class="form-control" value="{{$epizoda->title}}">
                         </div>
                         <div class="form-group">
+                            <label class="form-label text-dark">Broj Epizode</label>
+                            <input type="text" name="brojEpizode" class="form-control" placeholder="" value="{{$epizoda->brojEpizode}}" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label text-dark">Gost Epizode</label>
+                            <input type="text" name="gostEpizode" class="form-control" placeholder="" value="{{$epizoda->guest1}}"  >
+                        </div>
+                        <div class="form-group">
                             <label class="form-label text-dark">Soundcloud </label>
                             <input type="text" name="sc_url" class="form-control" value="{{$epizoda->sc_url}}">
                         </div>

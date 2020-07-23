@@ -1,5 +1,6 @@
 footer {
     @include paddinglr;
+    margin-top: 3%;
 
     .footerLogo {
         img {
@@ -19,6 +20,7 @@ footer {
     padding: 10px;
     margin: 32px 0px;
     height: 100%;
+    border-radius: 5px
 }
 
 .bottomFooter {
@@ -27,6 +29,13 @@ footer {
     position: absolute;
     width: 100%;
     left: 0;
+    @include paddinglrB;
+    padding-bottom: 3px;
+    padding-top: 12px;
+
+    a {
+        color: white;
+    }
 }
 
 .footerLista {

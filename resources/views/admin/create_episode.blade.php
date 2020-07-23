@@ -18,6 +18,14 @@
 							</div>
 							<div class="card-body">
 								<div class="form-group">
+									<label class="form-label text-dark">Broj Epizode</label>
+									<input type="text" name="brojEpizode" class="form-control" placeholder="" required>
+								</div>
+								<div class="form-group">
+									<label class="form-label text-dark">Gost Epizode</label>
+									<input type="text" name="gostEpizode" class="form-control" placeholder="" >
+								</div>
+								<div class="form-group">
 									<label class="form-label text-dark">Naziv Epizode</label>
 									<input type="text" name="title" class="form-control" placeholder="" required>
 								</div>

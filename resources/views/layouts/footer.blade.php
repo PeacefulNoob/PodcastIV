@@ -8,7 +8,7 @@
 		                </div>
 
 		            </div>
-		            <div class="col-lg-8 ml-auto mr-0">
+		            <div class="col-lg-9 ml-auto mr-0">
 		                <div class="row">
 		                    <div class="col-lg-2">
 		                        <!-- Links -->
@@ -95,15 +95,16 @@
 		            </div>
 		        </div>
 		        <div class="row">
-		            <div class="col-lg-8 m-auto">
+		            <div class="col-lg-12 m-auto">
 		                <div class="patreon"><h1>MJESTO ZA EMBED PATREON</h1></div>
 
 		            </div>
 		        </div>
 		        <div class="row">
-		            <div class="bottomFooter ">
+		            <div class="bottomFooter d-flex ">
 
-		                <p>Sva prava zadržana: Igor i Vlado podcast</p>
+						<p> Sva prava zadržana: Igor i Vlado podcast</p>
+					<a href="#" class="ml-auto mr-0 text-center"> 	<p>© 2020 QQRIQ™</p></a>
 		            </div>
 		        </div>
 

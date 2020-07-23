@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Epizoda extends Model
 {
     protected $table = 'epizodas';
-    protected $fillable = array('title','sezona_id', 'sc_url', 'desription', 'yt_url','image');
+    protected $fillable = array('title','sezona_id', 'sc_url', 'desription', 'yt_url','image','guest1','guest2','brojEpizode');
 
 
     public function sezona()

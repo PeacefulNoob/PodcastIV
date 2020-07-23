@@ -23,7 +23,7 @@ class SezonaController extends Controller
     public function index()
     {
         $sezone= Sezona::all();
-        $epizode= Epizoda::all();
+        $epizode=Epizoda::orderBy('created_at', 'DESC')->get();
         $posts= Post::all();
         return view('site.index', compact('sezone','epizode','posts'));
     }

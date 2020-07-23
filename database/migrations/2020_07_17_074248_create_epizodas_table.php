@@ -22,7 +22,11 @@ class CreateEpizodasTable extends Migration
             $table->text('sc_url')->nullable();
             $table->integer('sezona_id');
             $table->integer('user_id');
+            $table->string('guest1');
+            $table->string('guest1');
+            $table->string('brojEpizode');
 
+            
             $table->timestamps();
         });
     }

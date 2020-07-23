@@ -49,6 +49,7 @@ class EpizodaController extends Controller
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             'sezona_id' => 'required',
+            'brojEpizode' => 'required',
             'sc_url' => 'required',
             'description' => 'required',
             'image' => 'mimes:mp4,mov,ogg,jpeg,png,jpg,svg'
@@ -93,6 +94,8 @@ class EpizodaController extends Controller
         $epizoda->description = $request->input('description');
         $epizoda->yt_url = $url;
         $epizoda->sc_url = $request->input('sc_url');
+        $epizoda->brojEpizode = $request->input('brojEpizode');
+        $epizoda->guest1 = $request->input('gostEpizode');      
         $epizoda->image = $fileNameToStore;
         $epizoda->user_id = auth()->user()->id;
         $epizoda->save();
@@ -164,7 +167,7 @@ class EpizodaController extends Controller
             // Filename to store
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
             // Upload Image
-            Image::make($request->file('image'))->resize(500, null, function($constraint) {  $constraint->aspectRatio();}) ->save('assets/images/ad_images/'.$fileNameToStore);
+            Image::make($request->file('image'))->resize(500, null, function($constraint) {  $constraint->aspectRatio();}) ->save('assets/images/epizoda/'.$fileNameToStore);
 
                 } else {
             $fileNameToStore = $epizoda->image;
@@ -174,6 +177,8 @@ class EpizodaController extends Controller
             'title' => $request->title,
             'yt_url' => $request->yt_url,
             'sc_url' => $request->sc_url,
+            'brojEpizode' => $request->brojEpizode,
+            'guest1' => $request->gostEpizode,   
             'sezona_id' => $request->sezona_id,
             'description' => $request->description,
             'image' => $fileNameToStore,

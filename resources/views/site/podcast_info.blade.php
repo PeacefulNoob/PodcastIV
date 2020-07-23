@@ -62,7 +62,7 @@
                                   <div class="row">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mbt30">
                                         <!-- 1 -->
-                                        <div class="single-features-light"><!-- single features -->
+                                        <div class="single-features-light scrollY"><!-- single features -->
                                             <!-- uses solid style -->
                                             <h5>
                                                 @php
@@ -72,15 +72,15 @@
                                            
                                             </h5>
                                             @foreach ($sezona->epizoda as $epizoda)
-                                                <div class="single-features-light">
-                                                    <div class="episode my-2">
-                                                    <a class="episode-img" href="/epizoda/{{$epizoda->id}}"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
-                                                    <div class="episode-body">
+                                                <div class="">
+                                                    <div class="episode h-auto my-2">
+                                                    <a class="episode-img tab_image" href="/epizoda/{{$epizoda->id}}"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
+                                                    <div class="episode-body tabBody">
                                                         <h6 class="episode-title font-weight-bold"><a href="/epizoda/{{$epizoda->id}}">
                                                             @php
 												
-                                                            echo substr($epizoda->title, 0, 10);
-                                                        @endphp ...
+                                                            echo substr($epizoda->title, 0, 20);
+                                                        @endphp 
                                                   </a></h6>
                                                         
                                                     </div>

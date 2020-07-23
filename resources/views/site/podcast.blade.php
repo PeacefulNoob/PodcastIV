@@ -29,28 +29,34 @@
                             {{-- epizoda --}}
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mbt30">
 
-                                <div class="single-features-light">
-
-                                    <div class="episode my-2">
-                                        <a class="episode-img" href="/epizoda/{{$epizoda->id}}"><img
-                                                src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
-                                        <div class="episode-body">
-                                            <h6 class="episode-sub_title font-weight-bold">{{$epizoda->sezona->title}}</h6>
-                                            <h5 class="episode-title font-weight-bold"><a href="/epizoda/{{$epizoda->id}}">@php
-												
-                                                echo substr($epizoda->title, 0, 14);
-                                            @endphp
-                                                    </a></h5>
-                                            <div class="episode-desc">
-                                                <p class="">@php
-												
-                                                    echo substr($epizoda->description, 0, 60);
-                                                @endphp... </p>
-                                              
+                                <div class="episode my-2 d-flex">
+                                    <a class="episode-img" href="/epizoda/{{ $epizoda->id }}"><img
+                                            src="/assets/images/epizoda/{{ $epizoda->image }}" alt="Episode Image"></a>
+                                    <div class="episode-body ">
+                                        <div class="d-flex">
+                                            <h6 class="episode-sub_title ghost font-weight-bold">
+                                                {{ $epizoda->sezona->title }}</h6>
+                                            <div class="share-button"><img src="/assets/images/Share-ikonica.svg" alt="">
                                             </div>
+    
                                         </div>
+                                        <h5 class="episode-title mt-1 mb-3"><a href="/epizoda/{{ $epizoda->id }}">
+                                                @php
+                                                    echo substr($epizoda->title, 0, 60);
+                                                @endphp
+                                            </a>
+                                        </h5>
+                                        <div class="episode-desc mb-1">
+                                            <p class="ghost">@php
+    
+                                                echo substr($epizoda->description, 0, 350);
+                                                           @endphp... </p>
+    
+                                           </div>
+                                        <div class="soundcloud-main"> {!!$epizoda->sc_url!!}</div>
+                                        <div class="episode-guest"> Gost emisije : {{ $epizoda->guest1 }}</div>
                                     </div>
-                                </div>
+                             </div>
                             </div>
                             {{-- kraj epizode --}}
 

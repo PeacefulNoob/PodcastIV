@@ -199,7 +199,7 @@ nav ul li ul li a {
   top: 50%;
   -webkit-transform: translate(0px, -50%);
           transform: translate(0px, -50%);
-  right: 32%;
+  right: 18%;
   background: none;
   z-index: 3;
   -webkit-transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
@@ -230,7 +230,7 @@ nav ul li ul li a {
   top: 50%;
   -webkit-transform: translate(0px, -50%);
           transform: translate(0px, -50%);
-  right: 32%;
+  right: 18%;
   z-index: 2;
   cursor: pointer;
   opacity: 0.4;
@@ -265,12 +265,15 @@ nav ul li ul li a {
 }
 
 .brandf div {
-  -webkit-transform: translate(20%, 50%);
-          transform: translate(20%, 50%);
+  padding: 5%;
 }
 
 .brandf div h5 a {
   color: white;
+}
+
+.brandf div h5 a img {
+  height: 50%;
 }
 
 .header1 {
@@ -278,8 +281,8 @@ nav ul li ul li a {
 }
 
 .header1 .gornji {
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .header1 .gornji a {
@@ -288,12 +291,13 @@ nav ul li ul li a {
 
 .header1 .gornji a p {
   color: white;
-  margin: 5px 0px;
+  margin: 2px 2px !important;
 }
 
 footer {
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 3%;
 }
 
 footer .footerLogo img {
@@ -307,6 +311,7 @@ footer .footerLogo img {
   padding: 10px;
   margin: 32px 0px;
   height: 100%;
+  border-radius: 5px;
 }
 
 .bottomFooter {
@@ -315,6 +320,14 @@ footer .footerLogo img {
   position: absolute;
   width: 100%;
   left: 0;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 3px;
+  padding-top: 12px;
+}
+
+.bottomFooter a {
+  color: white;
 }
 
 .footerLista {
@@ -326,8 +339,8 @@ footer .footerLogo img {
 }
 
 .main {
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .main .mainTekst {
@@ -393,17 +406,17 @@ footer .footerLogo img {
 
 .homeButtons .row {
   width: 100%;
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
 .div1 {
-  padding-left: 12%;
-  padding-right: 12%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 4% !important;
+  padding-top: 2% !important;
   background: #363636;
 }
 
@@ -449,27 +462,6 @@ footer .footerLogo img {
   border-top: 3px solid #B1B1B1;
   z-index: 1;
   width: 70px;
-}
-
-.post {
-  height: 100%;
-}
-
-.post .post-img {
-  display: block;
-  -webkit-transition: 0.2s opacity;
-  transition: 0.2s opacity;
-}
-
-.post .post-img img {
-  height: 22vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.post .post-meta {
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .post.post-row .post-body {
@@ -543,8 +535,8 @@ footer .footerLogo img {
 }
 
 .postDiv {
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .postDiv .row {
@@ -553,6 +545,8 @@ footer .footerLogo img {
   margin-bottom: 6%;
   margin-left: 0;
   margin-right: 0;
+  margin-top: 3% !important;
+  margin-bottom: 3% !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -585,6 +579,157 @@ footer .footerLogo img {
 .pogledajSve {
   border-bottom: 1px solid #B1B1B1;
   padding-bottom: 3%;
+}
+
+.episode-guest {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #f5b52b;
+  font-weight: 600;
+  letter-spacing: 0.36px;
+}
+
+.col1,
+.col2 > a {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.col1 {
+  width: 48%;
+}
+
+.no-height {
+  height: auto;
+}
+
+.no-height .image {
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.unit-9 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: none;
+  height: auto;
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.unit-9 span {
+  color: #fff;
+  padding-top: 20px;
+}
+
+.unit-9 h2 {
+  color: #fff;
+}
+
+.unit-9 .image {
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  height: auto;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  border-radius: 5px;
+}
+
+.unit-9 .unit-9-content {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 3;
+  padding: 8% 7%;
+}
+
+.unit-9 .unit-9-content h2 {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.unit-9 .unit-9-content h4 {
+  text-transform: uppercase;
+  color: white;
+}
+
+.unit-9:hover .image {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.unit-9:hover .medijaOverlay {
+  border-radius: 0px;
+}
+
+.dva span {
+  font-size: 16px !important;
+}
+
+.site-block-retro .col1,
+.site-block-retro .col2 > a {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.site-block-retro .col1 {
+  width: 65%;
+}
+
+.site-block-retro .col2 {
+  width: 32%;
+}
+
+.site-block-retro .col2 > a {
+  display: block;
+  height: 300px;
+}
+
+.site-block-retro .col2 > a:first-child {
+  margin-bottom: 8%;
+}
+
+.medijaOverlay {
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#36363600), color-stop(75%, #1F1F1F6B), color-stop(115%, #000000)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, #36363600 0%, #1F1F1F6B 75%, #000000 115%) 0% 0% no-repeat padding-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.authorMedia {
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  padding: 1% 4%;
+  border-radius: 10px;
+  background: #363636;
+  color: white;
+}
+
+.authorMedia img {
+  margin-left: 7px;
+  width: 15px;
+  height: 15px;
 }
 
 .wrapper {
@@ -622,7 +767,6 @@ h1 + p {
   color: #888;
   padding: 20px 0;
   border-bottom: 3px solid #888;
-  background: #f7f7f7;
 }
 
 .tabs a:hover,
@@ -631,7 +775,7 @@ h1 + p {
 }
 
 .tabgroup .wrap-bg {
-  padding: 30px;
+  padding: 8px;
 }
 
 .clearfix:after {
@@ -646,8 +790,8 @@ ul {
 }
 
 .tabSezone {
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 2%;
   padding-bottom: 2%;
 }
@@ -656,29 +800,26 @@ ul {
   height: 100%;
   position: relative;
   border-bottom: 1px solid #f5b52b;
-  padding: 15px 5px;
+  padding: 15px 0px;
 }
 
 .episode .episode-img {
   display: block;
   -webkit-transition: 0.2s opacity;
   transition: 0.2s opacity;
-  width: 25%;
+  width: 38%;
   float: left;
-  margin-top: 1%;
 }
 
 .episode .episode-img img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
 }
 
 .episode .episode-body {
   position: relative;
   margin: 0% 2%;
-  margin-top: auto;
   width: 100%;
 }
 
@@ -697,9 +838,15 @@ ul {
   padding: 1px;
 }
 
+.episode .episode-sub_title {
+  letter-spacing: 5.35px;
+  text-transform: uppercase;
+  margin: 2px 0px;
+}
+
 #sectionp {
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 15%;
+  padding-right: 15%;
   padding-top: 2%;
   padding-bottom: 2%;
   margin-top: 90px;
@@ -720,7 +867,7 @@ ul {
 }
 
 .share-button {
-  padding: 7px 25px;
+  padding: 0px 0px 13px 25px;
 }
 
 .share-button img {
@@ -736,7 +883,7 @@ ul {
 }
 
 .leftView {
-  width: 60%;
+  width: 65%;
   margin-left: 10%;
   margin-right: 25%;
 }
@@ -745,8 +892,9 @@ ul {
   position: fixed;
   top: 0;
   right: 0;
+  height: 100%;
   padding-top: 60px;
-  width: 25%;
+  width: 21%;
   background: #fff;
   z-index: 10;
   -webkit-box-shadow: 0 0 0 1px rgba(181, 201, 227, 0.12), 0 8px 16px 0 rgba(181, 201, 227, 0.24);
@@ -776,7 +924,6 @@ ul {
   color: #888;
   padding: 20px 0;
   border-bottom: 3px solid #888;
-  background: #f7f7f7;
   margin: 4%;
 }
 
@@ -868,10 +1015,19 @@ a {
 
 p {
   word-break: break-all;
+  margin: 0 0 10px !important;
 }
 
 .ghost {
   color: #B1B1B1;
+}
+
+main {
+  margin-top: 8% !important;
+}
+
+#section1 {
+  margin-top: -8%;
 }
 
 img {
@@ -903,6 +1059,10 @@ img {
   color: #fff;
 }
 
+.tab_image img {
+  height: 8vh;
+}
+
 .bg-background3 .header-text {
   position: relative;
   z-index: 10;
@@ -932,18 +1092,30 @@ img {
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 166px;
+  height: auto;
+  background-color: #333333;
+  z-index: 13;
   width: 100%;
+  padding: 1% 5%;
 }
 
 .single-features-light {
-  overflow-y: scroll;
   height: 100%;
   height: 70vh;
+}
+
+.scrollY {
+  /*     overflow-y: scroll;
+ */
+  overflow-x: hidden;
 }
 
 .soundcloud-main {
   padding: 1% 5%;
   background: #333333;
+}
+
+.tabBody {
+  margin: 8% 42% !important;
 }
 /*# sourceMappingURL=app.css.map */

@@ -33,7 +33,6 @@ h1+p {
     color: #888;
     padding: 20px 0;
     border-bottom: 3px solid #888;
-    background: #f7f7f7;
 }
 
 .tabs a:hover,
@@ -42,7 +41,7 @@ h1+p {
 }
 
 .tabgroup .wrap-bg {
-    padding: 30px;
+    padding: 8px;
 
 }
 
@@ -65,20 +64,18 @@ ul {
     height: 100%;
     position: relative;
     border-bottom: 1px solid $primaryColor;
-    padding: 15px 5px;
+    padding: 15px 0px;
 
     .episode-img {
         display: block;
-        -webkit-transition: 0.2s opacity;
         transition: 0.2s opacity;
-        width: 25%;
+        width: 38%;
         float: left;
-        margin-top: 1%;
 
         img {
             width: 100%;
             object-fit: cover;
-            height: 100%;
+
         }
     }
 
@@ -87,7 +84,6 @@ ul {
 
         position: relative;
         margin: 0% 2%;
-        margin-top: auto;
         width: 100%;
 
         .episode-title {
@@ -118,6 +114,11 @@ ul {
         }
     }
 
+    .episode-sub_title {
+        letter-spacing: 5.35px;
+        text-transform: uppercase;
+        margin: 2px 0px;
+    }
 
 
 
@@ -148,7 +149,7 @@ ul {
 }
 
 .share-button {
-    padding: 7px 25px;
+    padding: 0px 0px 13px 25px;
 
     img {
         width: 18px;
