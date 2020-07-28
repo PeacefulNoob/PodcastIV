@@ -1,7 +1,6 @@
-$content-width: 1000px;
-$breakpoint: 799px;
-$nav-height: 70px;
-
+.header2 {
+    flex-wrap: wrap;
+}
 
 
 .nav-container {
@@ -94,60 +93,13 @@ nav {
 .nav-mobile {
     display: none;
     position: absolute;
-    top: 0;
+    top: 40px;
     right: 0;
     height: $nav-height;
     width: $nav-height;
 }
 
-@media only screen and (max-width: 798px) {
 
-    // Hamburger nav visible on mobile only
-    .nav-mobile {
-        display: block;
-    }
-
-
-    nav {
-        width: 100%;
-        padding: $nav-height 0 15px;
-
-        ul {
-            display: none;
-            background-color: $primaryColor;
-            height: 100vh;
-            margin: 0;
-            padding: 10px;
-            text-align: center;
-
-            li {
-                float: none;
-                background-color: $primaryColor;
-                margin-top: 20px;
-
-                a {
-                    padding: 15px;
-                    line-height: 20px;
-
-                }
-
-                ul li a {
-                    padding-left: 30px;
-                }
-            }
-        }
-    }
-
-    .nav-dropdown {
-        position: static;
-    }
-}
-
-@media screen and (min-width: $breakpoint) {
-    .nav-list {
-        display: block !important;
-    }
-}
 
 #nav-toggle {
     position: absolute;
@@ -163,7 +115,7 @@ nav {
         border-radius: 1px;
         height: 5px;
         width: 35px;
-        background: $nav-font-color;
+        background: #f7ffff;
         position: absolute;
         display: block;
         content: '';
@@ -212,12 +164,12 @@ nav {
         border: none;
         outline: none;
         color: #555;
-        padding-right: 60px;
+        padding-left: 60px;
         width: 0px;
         position: absolute;
         top: 50%;
         transform: translate(0px, -50%);
-        right: 18%;
+        left: 2%;
         background: none;
         z-index: 3;
         -webkit-transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
@@ -247,14 +199,13 @@ nav {
         position: absolute;
         top: 50%;
         transform: translate(0px, -50%);
-        right: 18%;
+        left: 2%;
         z-index: 2;
         cursor: pointer;
         opacity: 0.4;
         cursor: pointer;
         -webkit-transition: opacity .4s ease;
         transition: opacity .4s ease;
-        background-size: cover;
     }
 
     input[type="submit"]:hover {
@@ -272,29 +223,46 @@ nav {
     width: 20%;
 }
 
-.brandf {
-    width: 10%;
+.sheader {
+    width: 20%;
 }
 
 .brandf {
-    width: 10%;
-    height: auto;
-    background: $greyColor;
+    width: 69px;
+    transition: 0.7s ease;
+    position: relative;
+    float: right;
 
-    div {
+    .podrzite {
+        height: 39px;
+        font-size: inherit;
+        display: inline-block;
+        padding-right: 60px;
+        width: 0px;
+        position: absolute;
+        top: 50%;
+        transform: translate(0px, -50%);
+        right: 14%;
+        background: none;
+        z-index: 3;
+        transition: width 0.4s ease;
+        cursor: pointer;
+        overflow: hidden;
+    }
 
-        padding: 5%;
-
-        h5 {
-            a {
-                color: white;
-
-                img {
-                    height: 50%;
-                }
-            }
+    a {
+        img {
+            position: relative;
+            z-index: 4;
+            padding: 20%;
+            background: #ffffff;
         }
     }
+
+}
+
+.brandf:hover .podrzite {
+    width: 280px;
 }
 
 .header1 {
@@ -302,14 +270,38 @@ nav {
 
     .gornji {
         @include paddinglr;
+        overflow: hidden;
 
-        a {
-            margin: auto;
 
-            p {
-                color: white;
-                margin: 2px 2px !important;
-            }
-        }
     }
+}
+
+#myBtnContainer button {
+    margin: auto !important;
+}
+
+
+#myBtnContainer {
+    width: 100%;
+
+}
+
+#myBtnContainer a {
+    margin-right: 6px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+
+    p {
+        margin: 0 !important;
+    }
+
+}
+
+.dx {
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
 }

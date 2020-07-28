@@ -1,27 +1,14 @@
 @extends('layouts.main')
 @section('content')
 <section id="section1">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
             <div class="item active">
-                <img class="slImage" src="assets/images/Homepage_cover.jpg" alt="Los Angeles">
+                <img class="slImage" src="assets/images/Homepagecover3.png" alt="Los Angeles">
             </div>
 
-            <div class="item">
-                <img class="slImage" src="assets/images/Homepagecover3.png" alt="Chicago">
-            </div>
 
-            <div class="item">
-                <img class="slImage" src="assets/images/Homepage_cover.jpg" alt="New York">
-            </div>
-        </div>
+   
 
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <div class="overlayHome"></div>
     <div class="homeButtons">
 
@@ -56,6 +43,7 @@
     <div class="postDiv py-5">
         <div class="row justify-content-center ">
             <h2 class="hafter">NAJAKTUELNIJE PODCAST EPIZODE</h2>
+            
         </div>
         <div class="row">
             @if(count($epizode) > 0)
@@ -73,6 +61,8 @@
                                 <a class="episode-img" href="/epizoda/{{ $epizoda->id }}"><img
                                         src="/assets/images/epizoda/{{ $epizoda->image }}" alt="Episode Image"></a>
                                 <div class="episode-body ">
+                                    <div class="episode-guest"> Gost emisije : {{ $epizoda->guest1 }}</div>
+
                                     <div class="d-flex">
                                         <h6 class="episode-sub_title ghost font-weight-bold">
                                             {{ $epizoda->sezona->title }}</h6>
@@ -94,7 +84,6 @@
 
                                        </div>
                                     <div class="soundcloud-main"> {!!$epizoda->sc_url!!}</div>
-                                    <div class="episode-guest"> Gost emisije : {{ $epizoda->guest1 }}</div>
                                 </div>
                          </div>
                     </div>
@@ -129,12 +118,12 @@
         </div>
         <div class="row pogledajSve">
 
-            <div class="col-9 mr-auto ml-0 text-white">
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 mr-auto ml-0 text-white">
                 <p>Igor i vlado u medijima je mjesto na kome ste u mogućnosti da ispratite cjelokupan rad ova dva
                     fenomena ljudske kreacije i pročitate po koju pametnu o sportu, životu, naciji, a ne i politici. Ođe
                     neki opis osmislite da ubačimo. Poy!</p>
             </div>
-            <div class="col-2 ml-auto mr-0  px-5">
+            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12 ml-auto mr-0  px-5">
               <a href="/post">  <button class="buttonSeason">
                     POGLEDAJ SVE
                 </button>
@@ -148,7 +137,7 @@
                 @php $counter = 0; @endphp
                 @foreach($posts as $post)
                         @if ($counter == 0)
-            <a href="/post/{{$post->id}}}" class="col1 unit-9 no-height" data-aos="fade-up" data-aos-delay="100">
+                           <a href="/post/{{$post->id}}}" class="col1 unit-9 no-height" data-aos="fade-up" data-aos-delay="100">
                             <div class="medijaOverlay"></div>
 
                         <div class="image" style="background-image: url('/assets/images/post_images/{{$post->cover_image}}');"></div>

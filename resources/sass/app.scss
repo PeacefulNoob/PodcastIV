@@ -4,6 +4,7 @@
 @import 'colors';
 // Varijable
 @import 'variables';
+
 // heder
 @import 'header';
 // footera
@@ -19,6 +20,8 @@
 @import 'podcast';
 // Single blog strana
 @import 'singleBlog';
+// Resposnive
+@import 'resp';
 
 body {
     color: $secondaryColor !important;
@@ -28,9 +31,11 @@ a {
     color: $hrefText;
 }
 
+
+
 p {
     word-break: break-all;
-    margin: 0 0 10px !important;
+    margin: 0 0 10px;
 }
 
 .ghost {
@@ -125,6 +130,7 @@ img {
 
 .soundcloud-main {
     padding: 1% 5%;
+    border-radius: 5px;
     background: #333333;
 }
 

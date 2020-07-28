@@ -1,19 +1,27 @@
 
 	<div class="nav-container">
 <div class="header1 ">
+	<div class="gornji d-flex"> 
+	<div id="myBtnContainer">
+		<div class="dx text-center">
 	
-<div class="gornji d-flex"> 
+			<a class="ml-0" href="/">	<p>Meridian Kladionice</p></a>
+			<a href="/">	<p>Hipotekarna Banka AD </p></a>
+			<a href="/">	<p>Apple</p></a>
+			<a href="/">	<p>Tesla</p></a>
+			<a href="/">	<p>Portal Analitika</p></a>
+			<a href="/">	<p>Red Bull </p></a>
+			<a href="/">	<p>La Mia Casa</p></a>
+			<a >	<p>QQRIQ</p></a>
+			<a class="mr-0" href="/">	<p>Nord Pixels</p></a>
+		
+		</div>
+	  </div>
+	</div>
+{{-- <div class="gornji d-flex"> 
 
-	<a class="ml-0" href="/">	<p>Meridian Kladionice</p></a>
-	<a href="/">	<p>Hipotekarna Banka AD </p></a>
-	<a href="/">	<p>Apple</p></a>
-	<a href="/">	<p>Tesla</p></a>
-	<a href="/">	<p>Portal Analitika</p></a>
-	<a href="/">	<p>Red Bull </p></a>
-	<a href="/">	<p>La Mia Casa</p></a>
-	<a >	<p>QQRIQ</p></a>
-	<a class="mr-0" href="/">	<p>Nord Pixels</p></a>
-</div>
+	
+</div> --}}
 
 
 </div>
@@ -53,11 +61,15 @@
 				</ul>
 			</div>
 			</nav>
+			<div class="sheader">
 			<div class="brandf ">
-				<div>
-					<h5><a href="#"> Podrzite nas na Patreon<img src="/assets/images/patreon.svg" alt=""></a></h5>
-				</div>
+				<a href="#">  <img src="/assets/images/patreon.svg" alt=""></a>
+
+					<h5 class="podrzite">Podržite nas na!</h5>
+			
 			</div>
+		</div>
+		
 		</div>
 	</div>
   

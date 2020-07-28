@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.header2 {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .nav-container {
   max-width: 100vw;
   position: fixed;
@@ -83,49 +88,10 @@ nav ul li ul li a {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 0;
+  top: 40px;
   right: 0;
   height: 70px;
   width: 70px;
-}
-
-@media only screen and (max-width: 798px) {
-  .nav-mobile {
-    display: block;
-  }
-  nav {
-    width: 100%;
-    padding: 70px 0 15px;
-  }
-  nav ul {
-    display: none;
-    background-color: #f5b52b;
-    height: 100vh;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-  }
-  nav ul li {
-    float: none;
-    background-color: #f5b52b;
-    margin-top: 20px;
-  }
-  nav ul li a {
-    padding: 15px;
-    line-height: 20px;
-  }
-  nav ul li ul li a {
-    padding-left: 30px;
-  }
-  .nav-dropdown {
-    position: static;
-  }
-}
-
-@media screen and (min-width: 799px) {
-  .nav-list {
-    display: block !important;
-  }
 }
 
 #nav-toggle {
@@ -143,7 +109,7 @@ nav ul li ul li a {
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: #000000;
+  background: #f7ffff;
   position: absolute;
   display: block;
   content: '';
@@ -193,13 +159,13 @@ nav ul li ul li a {
   border: none;
   outline: none;
   color: #555;
-  padding-right: 60px;
+  padding-left: 60px;
   width: 0px;
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0px, -50%);
           transform: translate(0px, -50%);
-  right: 18%;
+  left: 2%;
   background: none;
   z-index: 3;
   -webkit-transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
@@ -230,14 +196,13 @@ nav ul li ul li a {
   top: 50%;
   -webkit-transform: translate(0px, -50%);
           transform: translate(0px, -50%);
-  right: 18%;
+  left: 2%;
   z-index: 2;
   cursor: pointer;
   opacity: 0.4;
   cursor: pointer;
   -webkit-transition: opacity .4s ease;
   transition: opacity .4s ease;
-  background-size: cover;
 }
 
 #wrap input[type="submit"]:hover {
@@ -254,26 +219,46 @@ nav ul li ul li a {
   width: 20%;
 }
 
-.brandf {
-  width: 10%;
+.sheader {
+  width: 20%;
 }
 
 .brandf {
-  width: 10%;
-  height: auto;
-  background: #B1B1B1;
+  width: 69px;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  position: relative;
+  float: right;
 }
 
-.brandf div {
-  padding: 5%;
+.brandf .podrzite {
+  height: 39px;
+  font-size: inherit;
+  display: inline-block;
+  padding-right: 60px;
+  width: 0px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
+  right: 14%;
+  background: none;
+  z-index: 3;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.brandf div h5 a {
-  color: white;
+.brandf a img {
+  position: relative;
+  z-index: 4;
+  padding: 20%;
+  background: #ffffff;
 }
 
-.brandf div h5 a img {
-  height: 50%;
+.brandf:hover .podrzite {
+  width: 280px;
 }
 
 .header1 {
@@ -283,15 +268,34 @@ nav ul li ul li a {
 .header1 .gornji {
   padding-left: 15%;
   padding-right: 15%;
+  overflow: hidden;
 }
 
-.header1 .gornji a {
-  margin: auto;
+#myBtnContainer button {
+  margin: auto !important;
 }
 
-.header1 .gornji a p {
+#myBtnContainer {
+  width: 100%;
+}
+
+#myBtnContainer a {
+  margin-right: 6px;
   color: white;
-  margin: 2px 2px !important;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+#myBtnContainer a p {
+  margin: 0 !important;
+}
+
+.dx {
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 footer {
@@ -305,11 +309,10 @@ footer .footerLogo img {
 }
 
 .patreon {
-  background: #B1B1B1;
   width: 100%;
   color: white;
   padding: 10px;
-  margin: 32px 0px;
+  margin: 0px 0px 32px 0px;
   height: 100%;
   border-radius: 5px;
 }
@@ -534,6 +537,11 @@ footer .footerLogo img {
   float: left;
 }
 
+.site-block-retro {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .postDiv {
   padding-left: 15%;
   padding-right: 15%;
@@ -547,6 +555,7 @@ footer .footerLogo img {
   margin-right: 0;
   margin-top: 3% !important;
   margin-bottom: 3% !important;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -676,7 +685,7 @@ footer .footerLogo img {
 }
 
 .dva span {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
 .site-block-retro .col1,
@@ -1005,6 +1014,77 @@ ul {
   }
 }
 
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 798px) {
+  .search {
+    display: none;
+  }
+  .dva span {
+    font-size: 12px !important;
+  }
+  .brandf {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+  }
+  .site-block-retro .col1 {
+    width: 100%;
+  }
+  .site-block-retro .col2 {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    display: none;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 10px;
+    text-align: center;
+    background-color: #353535;
+  }
+  nav ul li {
+    float: none;
+    background-color: #f5b52b10;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+    color: white !important;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+  .nav-dropdown {
+    position: static;
+  }
+  .episode-guest {
+    position: relative;
+  }
+  .episode {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .episode .episode-body .episode-desc {
+    overflow: hidden;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 799px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
 body {
   color: #363636 !important;
 }
@@ -1015,7 +1095,7 @@ a {
 
 p {
   word-break: break-all;
-  margin: 0 0 10px !important;
+  margin: 0 0 10px;
 }
 
 .ghost {
@@ -1112,6 +1192,7 @@ img {
 
 .soundcloud-main {
   padding: 1% 5%;
+  border-radius: 5px;
   background: #333333;
 }
 

@@ -1,16 +1,21 @@
 		<!--Footer Section-->
 		<section>
 		    <footer>
+				<div class="row">
+		            <div class="col-lg-12 m-auto text-center">
+		                <div class="patreon"><a href="https://www.patreon.com/bePatron?u=17793118" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></div>
 
-		        <div class="row">
-		            <div class="col-lg-2 mr-auto ml-0">
+		            </div>
+		        </div>
+		        <div class="row mb-5">
+		            <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 m-auto text-center">
 		                <div class="footerLogo"> <img src="/assets/images/glaveDve.png" alt="">
 		                </div>
 
 		            </div>
-		            <div class="col-lg-9 ml-auto mr-0">
+		            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 ml-auto mr-0">
 		                <div class="row">
-		                    <div class="col-lg-2">
+							<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center ">
 		                        <!-- Links -->
 		                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Subscribe</h5>
 
@@ -24,7 +29,7 @@
 
 		                        </ul>
 		                    </div>
-		                    <div class="col-lg-2">
+		                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center">
 		                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Follow</h5>
 
 		                        <ul class="list-unstyled footerLista">
@@ -37,7 +42,7 @@
 
 		                        </ul>
 		                    </div>
-		                    <div class="col-lg-2">
+		                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center">
 		                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Sponzori</h5>
 
 		                        <ul class="list-unstyled footerLista">
@@ -60,7 +65,7 @@
 
 		                        </ul>
 		                    </div>
-		                    <div class="col-lg-2">
+		                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 text-center">
 		                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Linkovi</h5>
 
 		                        <ul class="list-unstyled footerLista">
@@ -79,7 +84,7 @@
 
 		                        </ul>
 		                    </div>
-		                    <div class="col-lg-2">
+		                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 m-auto text-center">
 		                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Kontakt</h5>
 
 		                        <ul class="list-unstyled footerLista">
@@ -94,12 +99,7 @@
 
 		            </div>
 		        </div>
-		        <div class="row">
-		            <div class="col-lg-12 m-auto">
-		                <div class="patreon"><h1>MJESTO ZA EMBED PATREON</h1></div>
-
-		            </div>
-		        </div>
+		     
 		        <div class="row">
 		            <div class="bottomFooter d-flex ">
 
