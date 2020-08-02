@@ -50,7 +50,7 @@
 								</div>
 							</div>
 							<div class="card-footer ">
-								<button type="submit" class="btn btn-primary btn-xs" id="uploadB">Dodaj</button>
+								<button type="submit" class="btn btn-primary btn-xs" id="uploadB">Izmeni</button>
 							</div>
 						</form>
 						</div>

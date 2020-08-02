@@ -8,10 +8,9 @@
     <div class="container">
         <div class="row ">
 
-            <div class="col-lg-8 col-md-12 col-md-12 m-auto">
-                <div class="item7-card-img maxh50">
-                    <a href="#"></a>
-                    <img src="/assets/images/epizoda/{{ $epizoda->image }}" alt="img" class="cover-image">
+            <div class="col-lg-11 col-md-12 col-md-12 m-auto">
+                <div class="item7-card-img m-auto">
+                    <img src="/assets/images/epizoda/{{ $epizoda->image }}" alt="img" class="m-auto cover-image">
                 </div>
                 <div class="card my-3 ">
                     <div class="card-header ">
@@ -22,27 +21,31 @@
                     </div>
                     <div class="card-body">
                         <div class="form-group">
-                            <label class="form-label text-dark">Naziv </label>
+                            <strong>   <label class="form-label text-dark">Naziv </label></strong>
                             <input type="text" name="title" class="form-control" value="{{$epizoda->title}}">
                         </div>
-                        <div class="form-group">
-                            <label class="form-label text-dark">Broj Epizode</label>
+                        <div class="form-row pt-4">
+                        <div class="form-group col-md-6">
+                            <strong>     <label class="form-label text-dark">Broj Epizode</label></strong>
                             <input type="text" name="brojEpizode" class="form-control" placeholder="" value="{{$epizoda->brojEpizode}}" required>
                         </div>
-                        <div class="form-group">
-                            <label class="form-label text-dark">Gost Epizode</label>
+                        <div class="form-group col-md-6">
+                            <strong>      <label class="form-label text-dark">Gost Epizode</label></strong>
                             <input type="text" name="gostEpizode" class="form-control" placeholder="" value="{{$epizoda->guest1}}"  >
                         </div>
+                    </div>
                         <div class="form-group">
-                            <label class="form-label text-dark">Soundcloud </label>
+                            <strong>    <label class="form-label text-dark">Soundcloud </label></strong>
                             <input type="text" name="sc_url" class="form-control" value="{{$epizoda->sc_url}}">
                         </div>
-                        <div class="form-group">
-                            <label class="form-label text-dark">Youtube </label>
+                        <div class="form-row pt-4">
+
+                        <div class="form-group col-md-6">
+                            <strong>    <label class="form-label text-dark">Youtube </label></strong>
                             <input type="text" name="yt_url" class="form-control" value="{{$epizoda->yt_url}}">
                         </div>
-                        <div class="form-group">
-                            <label class="form-label text-dark">Sezona</label>
+                        <div class="form-group col-md-6">
+                            <strong>    <label class="form-label text-dark">Sezona</label></strong>
                             <select name ="sezona_id" class="form-control custom-select">
                                 <option value="{{$epizoda->sezona_id}}">{{$epizoda->sezona->title}}</option>
                         @foreach ($sezone as $sezona)
@@ -51,9 +54,9 @@
                             </select>
                         </div>
                     
-                
+                    </div>
                         <div class="form-group">
-                            <label class="form-label text-dark">Opis</label>
+                            <strong>   <label class="form-label text-dark">Opis</label></strong>
                             <textarea class="form-control" name="description" rows="6" >{{$epizoda->description}}</textarea>
                         </div>
                         <div class="form-group">
@@ -64,7 +67,7 @@
                         </div>
                     </div>
                     <div class="card-footer ">
-                        <button type="submit" class="btn btn-primary btn-xs" >Dodaj</button>
+                        <button type="submit" class="btn btn-primary btn-xs" >Izmeni</button>
                     </div>
                 </form>
                 </div>

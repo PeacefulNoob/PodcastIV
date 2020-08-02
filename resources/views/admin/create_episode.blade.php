@@ -18,55 +18,54 @@
 							</div>
 							<div class="card-body">
 								<div class="form-group">
-									<label class="form-label text-dark">Broj Epizode</label>
-									<input type="text" name="brojEpizode" class="form-control" placeholder="" required>
+									<strong>   <label class="form-label text-dark">Naziv </label></strong>
+									<input type="text" name="title" class="form-control" value="">
 								</div>
-								<div class="form-group">
-									<label class="form-label text-dark">Gost Epizode</label>
-									<input type="text" name="gostEpizode" class="form-control" placeholder="" >
+								<div class="form-row pt-4">
+								<div class="form-group col-md-6">
+									<strong>     <label class="form-label text-dark">Broj Epizode</label></strong>
+									<input type="text" name="brojEpizode" class="form-control" placeholder="" value="" required>
 								</div>
-								<div class="form-group">
-									<label class="form-label text-dark">Naziv Epizode</label>
-									<input type="text" name="title" class="form-control" placeholder="" required>
+								<div class="form-group col-md-6">
+									<strong>      <label class="form-label text-dark">Gost Epizode</label></strong>
+									<input type="text" name="gostEpizode" class="form-control" placeholder="" value=""  >
 								</div>
+							</div>
 								<div class="form-group">
-									<label class="form-label text-dark">Sezona</label>
-									<select name="sezona_id" class="form-control custom-select" required>
-										<option value="0">Izaberite</option>
-										@foreach ($sezone as $sezona)
-										<option value="{{$sezona->id}}">{{$sezona->title}}</option>
-
-										@endforeach
+									<strong>    <label class="form-label text-dark">Soundcloud </label></strong>
+									<input type="text" name="sc_url" class="form-control" value="">
+								</div>
+								<div class="form-row pt-4">
+		
+								<div class="form-group col-md-6">
+									<strong>    <label class="form-label text-dark">Youtube </label></strong>
+									<input type="text" name="yt_url" class="form-control" value="">
+								</div>
+								<div class="form-group col-md-6">
+									<strong>    <label class="form-label text-dark">Sezona</label></strong>
+									<select name ="sezona_id" class="form-control custom-select">
+										<option value="0">Izaberi</option>
+								@foreach ($sezone as $sezona)
+								<option value="{{$sezona->id}}">{{$sezona->title}}</option>
+								@endforeach
 									</select>
 								</div>
 							
-						
+							</div>
 								<div class="form-group">
-									<label class="form-label text-dark">Opis epizode</label>
-									<textarea class="form-control" name="description" rows="6" placeholder="Unesite opis ovde.." required></textarea>
+									<strong>   <label class="form-label text-dark">Opis</label></strong>
+									<textarea class="form-control" name="description" rows="6" ></textarea>
 								</div>
 								<div class="form-group">
 									<div class="custom-file">
-										<input type="file" class="custom-file-input" name="image" required>
+										<input type="file" class="custom-file-input" name="image">
 										<label class="custom-file-label">Izaberite sliku</label>
 									</div>
 								</div>
-								<div class="form-group">
-									<label class="form-label text-dark">Youtube url</label>
-									<input type="text" name="yt_url" class="form-control" placeholder="" >
-                                </div>
-                                	<div class="form-group">
-									<label class="form-label text-dark">Soundcloud url</label>
-									<input type="text" name="sc_url" class="form-control" placeholder="" required>
-								</div>
-							
-							
-							
 							</div>
 							<div class="card-footer ">
-								<button type="submit" class="btn btn-primary btn-xs" >DODAJ</button>
+								<button type="submit" class="btn btn-primary btn-xs" >Dodaj</button>
 							</div>
-						</div>
 					</form>
 					</div>
 				

@@ -39,8 +39,8 @@
                                 <table class="table table-bordered table-hover mb-0 text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>ID Epizode</th>
-
+                                            <th>ID Ep</th>
+                                            <th>Broj Ep</th>
                                             <th>Naziv Epizode</th>
                                             <th>Opis Epizode</th>
                                             <th>Izmjeni</th>
@@ -54,6 +54,7 @@
                                      
                                         <tr>
                                         <td>{{$epizoda->id}}</td>
+                                        <td>{{$epizoda->brojEpizode}}</td>
                                             <td>
                                                 <div class="media mt-0 mb-0">
                                                     <div class="card-aside-img">
@@ -62,7 +63,11 @@
                                                     </div>
                                                     <div class="media-body">
                                                         <div class="card-item-desc ml-4 p-0 mt-2">
-                                                                <h4 class="font-weight-semibold">{{$epizoda->title}}</h4>
+                                                                <h6 class="font-weight-semibold">
+                                                                    @php
+												
+                                                echo substr($epizoda->title, 0, 30);
+                                            @endphp</h6>
                                                       <i class="fa fa-clock-o mr-1"></i>
                                                                 {{$epizoda->created_at}}<br>
                                                         </div>

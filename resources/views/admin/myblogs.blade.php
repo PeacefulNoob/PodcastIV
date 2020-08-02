@@ -20,7 +20,7 @@
                                     <table class="table table-bordered table-hover mb-0 text-nowrap">
                                         <thead>
                                             <tr>
-                                                <th></th>
+                                             
                                                 <th>Blog Objava</th>
                                                 <th>Kategorija</th>
                                                 <th>Status</th>
@@ -32,13 +32,7 @@
                                                 
                                          
                                             <tr>
-                                                <td>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input type="checkbox" class="custom-control-input"
-                                                            name="checkbox" value="checkbox">
-                                                        <span class="custom-control-label"></span>
-                                                    </label>
-                                                </td>
+                                               
                                                 <td>
                                                     <div class="media mt-0 mb-0">
                                                         <div class="card-aside-img">
@@ -48,7 +42,11 @@
                                                         <div class="media-body">
                                                             <div class="card-item-desc ml-4 p-0 mt-2">
                                                                 <a href="#" class="text-dark">
-                                                                    <h4 class="font-weight-semibold">{{$post->title}}</h4>
+                                                                    <h6 class="font-weight-semibold">
+                                                                        @php
+												
+                                                                        echo substr($post->title, 0, 30);
+                                                                    @endphp</h6>
                                                                 </a>
                                                                 <a href="#"><i class="fa fa-clock-o mr-1"></i>
                                                                     {{$post->created_at}}</a><br>
@@ -60,18 +58,18 @@
                                                 <td>
                                                     <a href="#" class="badge badge-warning">Published</a>
                                                 </td>
-                                                <td>
-                                                    <a class="btn btn-success btn-sm text-white" href="/post/{{$post->id}}/edit " data-toggle="tooltip"
+                                                <td class="d-flex m-auto">
+                                                    <a class="btn btn-success btn-sm text-white editP" href="/post/{{$post->id}}/edit " data-toggle="tooltip"
                                                         data-original-title="Edit"><i class="fa fa-pencil"></i></a>
 
                                                        
-                                                        <form action="{{ route('post.destroy', $post->id)}}" method="post">
+                                                        <form  class= "deletePost" action="{{ route('post.destroy', $post->id)}}" method="post">
                                                             @csrf
                                                             @method('DELETE')
                                                             <button type="submit" class="btn btn-danger">    <a class="btn btn-danger btn-sm text-white" data-toggle="tooltip"
                                                                 data-original-title="Delete"><i class="fa fa-trash-o"></i></a></button>
                                                         </form>
-                                                    <a class="btn btn-primary btn-sm text-white"  href="/post/{{$post->id}} " data-toggle="tooltip"
+                                                    <a class="btn btn-primary btn-sm text-white viewP"  href="/post/{{$post->id}} " data-toggle="tooltip"
                                                         data-original-title="View"><i class="fa fa-eye"></i></a>
                                                 </td>
                                             </tr>

@@ -3,6 +3,12 @@
   margin-bottom: 2%;
 }
 
+p {
+  word-break: break-all;
+  margin: 0 0 10px;
+  font-size: 14px !important;
+}
+
 .card-aside-img img {
   width: 80px;
   height: 80px;
@@ -12,7 +18,7 @@
 }
 
 .card-aside-img.wrap-border img {
-  border: 1px solid #363636;
+  border: 1px solid #f1f1f1;
   padding: 3px;
 }
 
@@ -38,7 +44,7 @@
 .amenu {
   height: 100% !important;
   width: 20%;
-  background-color: #363636;
+  background-color: #f1f1f1;
   position: fixed;
   left: 0;
   z-index: 21;
@@ -66,7 +72,7 @@
 }
 
 .amenu div ul li:hover a {
-  color: #363636;
+  color: #f1f1f1;
 }
 
 .amenu div ul li:hover {
@@ -74,7 +80,7 @@
 }
 
 .amenu div ul li:hover a {
-  color: #363636;
+  color: #f1f1f1;
 }
 
 .amenu div ul li a {
@@ -95,7 +101,7 @@
   position: absolute;
   width: 150px;
   padding: 5%;
-  background-color: #363636;
+  background-color: #f1f1f1;
   border-radius: 10px;
 }
 
@@ -113,5 +119,19 @@
 
 .width15 {
   width: 15px;
+}
+
+.editP {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.deletePost {
+  margin-left: 10px;
+}
+
+.viewP {
+  margin-left: 17px;
+  width: 50px;
 }
 /*# sourceMappingURL=appAdmin.css.map */

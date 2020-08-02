@@ -262,7 +262,7 @@ nav ul li ul li a {
 }
 
 .header1 {
-  background-color: #363636;
+  background-color: #f1f1f1;
 }
 
 .header1 .gornji {
@@ -319,7 +319,7 @@ footer .footerLogo img {
 
 .bottomFooter {
   color: white;
-  background: #363636;
+  background: #f1f1f1;
   position: absolute;
   width: 100%;
   left: 0;
@@ -338,7 +338,7 @@ footer .footerLogo img {
 }
 
 .footerLista li a {
-  color: #363636;
+  color: #f1f1f1;
 }
 
 .main {
@@ -420,7 +420,7 @@ footer .footerLogo img {
   padding-right: 6%;
   padding-bottom: 4% !important;
   padding-top: 2% !important;
-  background: #363636;
+  background: #f1f1f1;
 }
 
 .div1 .row {
@@ -1086,7 +1086,7 @@ ul {
 }
 
 body {
-  color: #363636 !important;
+  color: #f1f1f1 !important;
 }
 
 a {
@@ -1096,6 +1096,7 @@ a {
 p {
   word-break: break-all;
   margin: 0 0 10px;
+  font-size: 14px !important;
 }
 
 .ghost {
