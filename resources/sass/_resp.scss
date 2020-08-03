@@ -16,8 +16,19 @@
 
 
 @media only screen and (max-width: 798px) {
+    .slImage {
+
+        background-image: url(/assets/images/Homepage-cover4-Mobile.jpg) !important;
+    }
+
     .search {
         display: none;
+    }
+
+    .slImage {
+        height: 98vh !important;
+        object-fit: cover;
+        margin-top: 2vh;
     }
 
     .dva span {
@@ -89,12 +100,16 @@
         overflow: hidden;
         height: 20px;
     }
+
+    .footerKontakt {
+        margin: auto;
+    }
 }
 
 
 
 @media screen and (min-width: $breakpoint) {
     .nav-list {
-        display: block !important;
+        display: table !important;
     }
 }

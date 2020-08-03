@@ -5,15 +5,12 @@
 	<div id="myBtnContainer">
 		<div class="dx text-center">
 	
-			<a class="ml-0" href="/">	<p>Meridian Kladionice</p></a>
-			<a href="/">	<p>Hipotekarna Banka AD </p></a>
-			<a href="/">	<p>Apple</p></a>
-			<a href="/">	<p>Tesla</p></a>
-			<a href="/">	<p>Portal Analitika</p></a>
-			<a href="/">	<p>Red Bull </p></a>
-			<a href="/">	<p>La Mia Casa</p></a>
-			<a >	<p>QQRIQ</p></a>
-			<a class="mr-0" href="/">	<p>Nord Pixels</p></a>
+		
+			<a href="https://www.portalanalitika.me/">	<p>Portal Analitika</p></a>
+			<a href="https://www.redbull.com/rs-sr/red-bull-student-brand-manager-crna-gora">	<p>Red Bull </p></a>
+			<a href="https://lamiacasa.net/en/">	<p>La Mia Casa</p></a>
+			<a href="https://qqriq.me/">	<p>QQRIQ</p></a>
+			<a class="mr-0" href="https://nordpixels.me/">	<p>Nord Pixels</p></a>
 		
 		</div>
 	  </div>
@@ -46,11 +43,11 @@
 					
 					<h5>	<a href="/podcast">  Podcast</a></h5>
 				</li>
-				<li>
+		{{-- 		<li>
 					<h5>	<a href="#!">O nama</a></h5>
-					</li>
+					</li> --}}
 				<li>
-					<h5>	<a href="#!">Poslovna saradnja</a></h5>
+					<h5>	<a href="/contact">Poslovna saradnja</a></h5>
 				</li>
 				<li>
 					<h5>	<a href="/post">Mediji</a></h5>
@@ -63,7 +60,7 @@
 			</nav>
 			<div class="sheader">
 			<div class="brandf ">
-				<a href="#">  <img src="/assets/images/patreon.svg" alt=""></a>
+				<a href="https://www.patreon.com/bePatron?u=17793118">  <img src="/assets/images/patreon.svg" alt=""></a>
 
 					<h5 class="podrzite">Podržite nas na!</h5>
 			

@@ -22,9 +22,9 @@ nav {
 
     ul {
         list-style: none;
-        margin: 0;
+        margin: auto;
         padding: 0;
-        margin-left: 17%;
+
 
         li {
             float: left;
@@ -238,10 +238,10 @@ nav {
         font-size: inherit;
         display: inline-block;
         padding-right: 60px;
-        width: 0px;
+        width: 200px;
         position: absolute;
         top: 50%;
-        transform: translate(0px, -50%);
+        transform: translate(70%, -50%);
         right: 14%;
         background: none;
         z-index: 3;
@@ -262,6 +262,7 @@ nav {
 }
 
 .brandf:hover .podrzite {
+    transform: translate(20%, -50%);
     width: 280px;
 }
 

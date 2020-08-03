@@ -79,12 +79,12 @@
 		                                <a href="#!"> O nama</a>
 									</li>
 									<li>
-		                                <a href="#!"> Saradnja</a>
+		                                <a href="/contact"> Saradnja</a>
 		                            </li>
 
 		                        </ul>
 		                    </div>
-		                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 m-auto text-center">
+		                    <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2  text-center footerKontakt">
 		                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Kontakt</h5>
 
 		                        <ul class="list-unstyled footerLista">
@@ -104,7 +104,7 @@
 		            <div class="bottomFooter d-flex ">
 
 						<p> Sva prava zadržana: Igor i Vlado podcast</p>
-					<a href="#" class="ml-auto mr-0 text-center"> 	<p>© 2020 QQRIQ™</p></a>
+					<a href="https://qqriq.me/" class="ml-auto mr-0 text-center"> 	<p>© 2020 QQRIQ™</p></a>
 		            </div>
 		        </div>
 

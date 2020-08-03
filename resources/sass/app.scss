@@ -44,12 +44,21 @@ p {
 }
 
 main {
-    margin-top: 8% !important;
+    margin-top: 8%;
 }
 
 #section1 {
     margin-top: -8%;
 
+}
+
+.nav-mobile {
+    border-radius: 10px;
+    background-color: #b1b1b894;
+}
+
+#section2 {
+    margin-top: 7rem !important;
 }
 
 img {
@@ -138,4 +147,3 @@ img {
 .tabBody {
     margin: 8% 42% !important;
 }
-

@@ -22,7 +22,11 @@ Route::get('/podcast', 'SezonaController@podcast');
 Route::get('/singleBlog', function () {
     return view('site.blog_info');
 });
-
+Route::get('/contact', "ContactController@create");
+Route::post('Podcast Website', [
+    'uses' => 'ContactController@store',
+    'as' => 'contact.store.main'
+]);
 Auth::routes();
 
 Route::post('/post/{post}/comments' , 'CommentController@store');

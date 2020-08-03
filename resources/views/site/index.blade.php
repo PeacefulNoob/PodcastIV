@@ -2,9 +2,7 @@
 @section('content')
 <section id="section1">
 
-            <div class="item active">
-                <img class="slImage" src="assets/images/Homepagecover3.png" alt="Los Angeles">
-            </div>
+         <div class="slImage"></div>       
 
 
    

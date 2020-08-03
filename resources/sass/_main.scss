@@ -59,7 +59,7 @@
 
 .homeButtons {
     position: absolute;
-    bottom: 1%;
+    bottom: 7%;
     left: 0%;
     width: 100%;
 
@@ -244,9 +244,15 @@
 }
 
 .slImage {
-    height: 100vh !important;
-    object-fit: cover;
+    height: 91vh;
+    background: center;
+    background-size: cover;
+    margin-top: 13%;
+    background-image: url(/assets/images/Homepage-cover4.jpg);
+    width: 100%;
 }
+
+
 
 .pogledajSve {
     border-bottom: 1px solid $greyColor;
@@ -351,7 +357,7 @@
 }
 
 .dva span {
-    font-size: 16px ;
+    font-size: 16px;
 }
 
 

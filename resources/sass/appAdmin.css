@@ -18,7 +18,7 @@ p {
 }
 
 .card-aside-img.wrap-border img {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #363636;
   padding: 3px;
 }
 
@@ -44,7 +44,7 @@ p {
 .amenu {
   height: 100% !important;
   width: 20%;
-  background-color: #f1f1f1;
+  background-color: #363636;
   position: fixed;
   left: 0;
   z-index: 21;
@@ -72,7 +72,7 @@ p {
 }
 
 .amenu div ul li:hover a {
-  color: #f1f1f1;
+  color: #363636;
 }
 
 .amenu div ul li:hover {
@@ -80,7 +80,7 @@ p {
 }
 
 .amenu div ul li:hover a {
-  color: #f1f1f1;
+  color: #363636;
 }
 
 .amenu div ul li a {
@@ -101,7 +101,7 @@ p {
   position: absolute;
   width: 150px;
   padding: 5%;
-  background-color: #f1f1f1;
+  background-color: #363636;
   border-radius: 10px;
 }
 

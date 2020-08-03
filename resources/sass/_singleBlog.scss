@@ -1,6 +1,7 @@
 .leftView {
     width: 65%;
     margin-left: 10%;
+    flex-wrap: wrap;
     margin-right: 25%;
 }
 
@@ -56,8 +57,7 @@
 .single_episode {
     height: 100%;
     position: relative;
-    margin-left: 1%;
-    margin-right: 1%;
+
 
     .single_episode-img {
         display: block;
@@ -65,6 +65,10 @@
         transition: 0.2s opacity;
         width: 100%;
         margin-top: 3%;
+
+        img {
+            border-radius: 10px;
+        }
     }
 
 
