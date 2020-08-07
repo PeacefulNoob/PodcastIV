@@ -24,17 +24,17 @@ class SezonaController extends Controller
     {
         $sezone= Sezona::all();
         $epizode=Epizoda::orderBy('created_at', 'DESC')->get();
-        $posts= Post::all();
+        $posts= Post::orderBy('created_at', 'DESC')->get();
         return view('site.index', compact('sezone','epizode','posts'));
     }
-    public function podcast()
+/*     public function podcast()
     {
         $sezone= Sezona::all();
         $epizode= Epizoda::all();
 
         return view('site.podcast', compact('sezone','epizode'));
     }
-
+ */
     /**
      * Show the form for creating a new resource.
      *
@@ -89,9 +89,10 @@ class SezonaController extends Controller
     public function show(Sezona $sezona)
     {
         $sezona= Sezona::findOrFail($sezona->id);
-        $epizode =  DB::table('epizodas')->where('sezona_id', '=', $sezona->id)->get();
+        $sezone= Sezona::all();
+        $epizode= Epizoda::all();
 
-        return view('site.all_ep', compact('sezona','epizode'));
+        return view('site.podcast', compact('sezona','epizode','sezone'));
     }
 
     /**

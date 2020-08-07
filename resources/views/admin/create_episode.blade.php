@@ -19,7 +19,7 @@
 							<div class="card-body">
 								<div class="form-group">
 									<strong>   <label class="form-label text-dark">Naziv </label></strong>
-									<input type="text" name="title" class="form-control" value="">
+									<input type="text" name="title" class="form-control" value=""required>
 								</div>
 								<div class="form-row pt-4">
 								<div class="form-group col-md-6">
@@ -33,7 +33,7 @@
 							</div>
 								<div class="form-group">
 									<strong>    <label class="form-label text-dark">Soundcloud </label></strong>
-									<input type="text" name="sc_url" class="form-control" value="">
+									<input type="text" name="sc_url" class="form-control" value=""required>
 								</div>
 								<div class="form-row pt-4">
 		
@@ -43,8 +43,7 @@
 								</div>
 								<div class="form-group col-md-6">
 									<strong>    <label class="form-label text-dark">Sezona</label></strong>
-									<select name ="sezona_id" class="form-control custom-select">
-										<option value="0">Izaberi</option>
+									<select name ="sezona_id" class="form-control custom-select" >
 								@foreach ($sezone as $sezona)
 								<option value="{{$sezona->id}}">{{$sezona->title}}</option>
 								@endforeach
@@ -54,11 +53,11 @@
 							</div>
 								<div class="form-group">
 									<strong>   <label class="form-label text-dark">Opis</label></strong>
-									<textarea class="form-control" name="description" rows="6" ></textarea>
+									<textarea class="form-control" name="description" rows="6" required></textarea>
 								</div>
 								<div class="form-group">
 									<div class="custom-file">
-										<input type="file" class="custom-file-input" name="image">
+										<input type="file" class="custom-file-input" name="image"required>
 										<label class="custom-file-label">Izaberite sliku</label>
 									</div>
 								</div>

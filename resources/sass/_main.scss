@@ -65,6 +65,7 @@
 
     .row {
         width: 100%;
+        justify-content: center;
         @include padding();
 
     }
@@ -210,8 +211,8 @@
     .row {
         width: 100%;
         @include marginY();
-        margin-top: 3% !important;
-        margin-bottom: 3% !important;
+        margin-top: 1% !important;
+        margin-bottom: 1% !important;
         overflow: hidden;
     }
 }

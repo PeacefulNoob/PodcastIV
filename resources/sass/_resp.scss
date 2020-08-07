@@ -21,14 +21,26 @@
         background-image: url(/assets/images/Homepage-cover4-Mobile.jpg) !important;
     }
 
+    .nav-container {}
+
+    main {
+        margin-top: 12% !important;
+    }
+
+    #section2 {
+        margin-top: 0rem !important;
+    }
+
     .search {
         display: none;
     }
 
     .slImage {
-        height: 98vh !important;
+
+        height: 100vh !important;
         object-fit: cover;
-        margin-top: 2vh;
+        margin-top: 0px !important;
+
     }
 
     .dva span {
@@ -59,7 +71,7 @@
             display: none;
             height: 100vh;
             margin: 0;
-            padding: 80px 10px;
+            padding: 135px 10px;
             text-align: center;
             background-color: rgb(53, 53, 53);
 

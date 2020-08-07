@@ -26,8 +26,9 @@ window.jQuery(document).ready(function ($) {
 
 
 
-    $('.tabgroup > div').hide();
-    $('.tabgroup > div:first-of-type').show();
+    $('.tabgroup1 > div').hide();
+    $('.tabgroup1 > div:last-of-type').show();
+    
     $('.tabs a').click(function (e) {
         e.preventDefault();
         var $this = $(this),
@@ -46,4 +47,48 @@ window.jQuery(document).ready(function ($) {
     });
 
     $('.carousel').carousel('cycle');
+
+
+    var lastNumber = window.location.href.match(/\d+$/);
+
+    showSeaseon(lastNumber);
+    /* PODKAST STRANa
+     */
+    function showSeaseon(id) {
+        $('.tabgroup > div').hide();
+
+        $('.tabgroup #' + id).show();
+        $('.' + id).addClass('active');
+    }
+
+
+    $('.tabs a').click(function (e) {
+        e.preventDefault();
+        var $this = $(this),
+            tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
+            others = $this.closest('li').siblings().children('a'),
+            target = $this.attr('href');
+        others.removeClass('active');
+        $this.addClass('active');
+        $(tabgroup).children('div').hide();
+        $(target).show();
+
+
+    });
+
+
+    $('.carousel').carousel({
+        interval: 3000
+    });
+
+    $('.carousel').carousel('cycle');
 });
+
+(function ($) {
+    "use strict";
+
+    // ______________ Global Loader
+    $(window).on("load", function (e) {
+        $("#global-loader").fadeOut("slow");
+    });
+})(jQuery);

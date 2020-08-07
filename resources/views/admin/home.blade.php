@@ -39,7 +39,7 @@
                                 <table class="table table-bordered table-hover mb-0 text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>ID Ep</th>
+                                        
                                             <th>Broj Ep</th>
                                             <th>Naziv Epizode</th>
                                             <th>Opis Epizode</th>
@@ -53,7 +53,7 @@
                                             
                                      
                                         <tr>
-                                        <td>{{$epizoda->id}}</td>
+                                      
                                         <td>{{$epizoda->brojEpizode}}</td>
                                             <td>
                                                 <div class="media mt-0 mb-0">

@@ -3,11 +3,13 @@
     margin-left: 10%;
     flex-wrap: wrap;
     margin-right: 25%;
+    min-height: 40vh;
 }
 
 .rightView {
     position: fixed;
-    top: 0;
+    top: 3%;
+
     right: 0;
     height: 100%;
     padding-top: 60px;
@@ -28,7 +30,7 @@
 
     .tabs li {
         float: left;
-        width: 25%;
+        width: 33%;
     }
 
     .tabs a {
@@ -56,7 +58,9 @@
 
 .single_episode {
     height: 100%;
+    margin: 0;
     position: relative;
+    padding: 0;
 
 
     .single_episode-img {
@@ -80,7 +84,7 @@
         .single_episode-title {
 
             a {
-                color: $primaryColor;
+                color: $secondaryColor;
 
             }
 

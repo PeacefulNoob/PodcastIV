@@ -22,8 +22,8 @@
                                             <tr>
                                              
                                                 <th>Blog Objava</th>
-                                                <th>Kategorija</th>
-                                                <th>Status</th>
+                                               {{--  <th>Kategorija</th>
+                                                <th>Status</th> --}}
                                                 <th>Opcija</th>
                                             </tr>
                                         </thead>
@@ -54,10 +54,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td>{{-- {{$ad->$category->title}} --}}</td>
-                                                <td>
+                                               {{--  <td> {{$ad->$category->title}} </td> --}}
+                                            {{--     <td>
                                                     <a href="#" class="badge badge-warning">Published</a>
-                                                </td>
+                                                </td> --}}
                                                 <td class="d-flex m-auto">
                                                     <a class="btn btn-success btn-sm text-white editP" href="/post/{{$post->id}}/edit " data-toggle="tooltip"
                                                         data-original-title="Edit"><i class="fa fa-pencil"></i></a>

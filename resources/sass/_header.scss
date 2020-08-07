@@ -93,7 +93,7 @@ nav {
 .nav-mobile {
     display: none;
     position: absolute;
-    top: 40px;
+    top: 110px;
     right: 0;
     height: $nav-height;
     width: $nav-height;
@@ -238,10 +238,10 @@ nav {
         font-size: inherit;
         display: inline-block;
         padding-right: 60px;
-        width: 200px;
+        width: 270px;
         position: absolute;
         top: 50%;
-        transform: translate(70%, -50%);
+        transform: translate(85%, -50%);
         right: 14%;
         background: none;
         z-index: 3;
@@ -262,8 +262,8 @@ nav {
 }
 
 .brandf:hover .podrzite {
-    transform: translate(20%, -50%);
-    width: 280px;
+    transform: translate(10%, -50%);
+    width: 300px;
 }
 
 .header1 {
@@ -272,6 +272,7 @@ nav {
     .gornji {
         @include paddinglr;
         overflow: hidden;
+        max-height: 40px;
 
 
     }
@@ -291,7 +292,7 @@ nav {
     margin-right: 6px;
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 10px 10px 3px;
     display: inline-block;
 
     p {

@@ -20,10 +20,6 @@ h1+p {
     font-size: 16px;
 }
 
-.tabs li {
-    float: left;
-    width: 25%;
-}
 
 .tabs a {
     display: block;
@@ -60,11 +56,15 @@ ul {
     @include padding();
 }
 
+.p0 {
+    padding: 0px !important;
+}
+
 .episode {
     height: 100%;
     position: relative;
     border-bottom: 1px solid $secondaryColor;
-    padding: 15px 0px;
+    padding: 0px 0px 50px 0px;
 
     .episode-img {
         display: block;
@@ -79,6 +79,14 @@ ul {
         }
     }
 
+    .mgr32 {
+        margin: 3% 2% !important;
+
+    }
+
+    .h80 {
+        height: 80px;
+    }
 
     .episode-body {
 
@@ -138,6 +146,10 @@ ul {
 
     }
 
+    .episode {
+        padding: 0px 0px 10px 0px;
+    }
+
     .episode-img {
         width: 100% !important;
         float: none !important;
@@ -150,10 +162,16 @@ ul {
 
 .share-button {
     padding: 0px 0px 13px 25px;
+    position: relative;
 
     img {
         width: 18px;
         height: 18px;
+        height: 18px;
+        position: absolute;
     }
 
+    &:hover .fb_iframe_widget {
+        width: 200px;
+    }
 }

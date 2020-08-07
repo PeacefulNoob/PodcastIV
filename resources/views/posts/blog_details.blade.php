@@ -1,5 +1,24 @@
 @extends('layouts.main')
+@section('head_index')
 
+	<!-- META DATA -->
+    <title>Igor i Vlado Podcast | Mediji Post {{$post->title}}</title>
+
+    <meta name="description" content="Igor i Vlado Podcast |  {{$post->body}}">
+    <meta name="author" content="QQRIQ PeacefulNoob">
+    <meta name="keywords" content="Igor i Vlado Podcast">
+    <meta name="author" content="PeacefulNoob">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <meta property="og:image" content="https://igorivlado.com/assets/images/shareOg.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://igorivlado.com/post/{{$post->id}}" />
+    <meta property="og:title" content="Igor i Vlado Podcast | Mediji Post {{$post->title}}" />
+    <meta property="og:description" content="Igor i Vlado Podcast | {{$post->body}}" />
+    
+    @endsection
 @section('content')
 
 <!--Add listing-->
@@ -136,16 +155,16 @@
                                                    
                                                     </h5>
                                                     @foreach ($sezona->epizoda as $epizoda)
-                                                        <div class="single-features-light">
-                                                            <div class="episode my-2">
-                                                            <a class="episode-img" href="/epizoda/{{$epizoda->id}}"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
-                                                            <div class="episode-body">
-                                                                <h6 class="episode-title font-weight-bold"><a href="/epizoda/{{$epizoda->id}}">
+                                                        <div class="">
+                                                            <div class="episode h-auto my-2">
+                                                            <a class="episode-img tab_image" href="/epizoda/{{$epizoda->id}}"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
+                                                            <div class="episode-body mgr32 tabBody">
+                                                                <p class="episode-title font-weight-bold"><a href="/epizoda/{{$epizoda->id}}">
                                                                     @php
                                                         
-                                                                    echo substr($epizoda->title, 0, 10);
-                                                                @endphp ...
-                                                          </a></h6>
+                                                                    echo substr($epizoda->title, 0, 20);
+                                                                @endphp 
+                                                          </a></p>
                                                                 
                                                             </div>
                                                         </div>

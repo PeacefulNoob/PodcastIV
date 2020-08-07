@@ -6,11 +6,11 @@
 		<div class="dx text-center">
 	
 		
-			<a href="https://www.portalanalitika.me/">	<p>Portal Analitika</p></a>
-			<a href="https://www.redbull.com/rs-sr/red-bull-student-brand-manager-crna-gora">	<p>Red Bull </p></a>
-			<a href="https://lamiacasa.net/en/">	<p>La Mia Casa</p></a>
-			<a href="https://qqriq.me/">	<p>QQRIQ</p></a>
-			<a class="mr-0" href="https://nordpixels.me/">	<p>Nord Pixels</p></a>
+			<a  target="_blank" href="https://www.portalanalitika.me/">	<p>Portal Analitika</p></a>
+			<a  target="_blank" href="https://www.instagram.com/redbullcg/">	<p>Red Bull </p></a>
+			<a  target="_blank" href="https://www.facebook.com/lamiacasaPG/">	<p>La Mia Casa</p></a>
+			<a  target="_blank" href="https://qqriq.me/">	<p>QQRIQ</p></a>
+			<a  target="_blank" class="mr-0" href="https://nordpixels.me/">	<p>Nord Pixels</p></a>
 		
 		</div>
 	  </div>
@@ -41,7 +41,7 @@
 				</li>
 				<li>
 					
-					<h5>	<a href="/podcast">  Podcast</a></h5>
+					<h5>	<a href="/sezona/1">  Podcast</a></h5>
 				</li>
 		{{-- 		<li>
 					<h5>	<a href="#!">O nama</a></h5>
@@ -62,7 +62,7 @@
 			<div class="brandf ">
 				<a href="https://www.patreon.com/bePatron?u=17793118">  <img src="/assets/images/patreon.svg" alt=""></a>
 
-					<h5 class="podrzite">Podržite nas na!</h5>
+					<h5 class="podrzite">Podržite nas na Patreonu!</h5>
 			
 			</div>
 		</div>

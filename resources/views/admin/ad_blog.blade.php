@@ -20,7 +20,7 @@
 									<label class="form-label text-dark">Naziv Blog Objave</label>
 									<input type="text" name="title" class="form-control" placeholder="" required>
 								</div>
-								<div class="form-group">
+					{{-- 			<div class="form-group">
 									<label class="form-label text-dark">Kategorija</label>
 									<select name="cat_id" class="form-control custom-select" required>
 										<option value="0">Izaberite</option>
@@ -29,7 +29,7 @@
 
 										@endforeach
 									</select>
-								</div>
+								</div> --}}
 							
 						
 								<div class="form-group">

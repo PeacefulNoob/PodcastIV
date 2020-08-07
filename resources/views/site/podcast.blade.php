@@ -1,4 +1,23 @@
 @extends('layouts.main')
+@section('head_index')
+
+	<!-- META DATA -->
+<title>Igor i Vlado Podcast | Podcast strana</title>
+    <meta name="description" content="Podcast Igor i Vlado je naš pokušaj - Igora Majera, organizatora sportskih događaja i Vlada Perovića, Ivinog tate - da izliječimo zajedničku hiperaktivnost terapeutskim ''dušenjem'' u vremenskom okviru od sat do dva makar jednom nedjeljno.">
+    <meta name="author" content="QQRIQ PeacefulNoob">
+    <meta name="keywords" content="Igor i Vlado Podcast | Podcast strana">
+    <meta name="author" content="PeacefulNoob">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <meta property="og:image" content="https://igorivlado.com/assets/images/shareOg.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://igorivlado.com/podcast" />
+    <meta property="og:title" content="Igor i Vlado Podcast | Podcast strana" />
+    <meta property="og:description" content="Podcast Igor i Vlado je naš pokušaj - Igora Majera, organizatora sportskih događaja i Vlada Perovića, Ivinog tate - da izliječimo zajedničku hiperaktivnost terapeutskim ''dušenjem'' u vremenskom okviru od sat do dva makar jednom nedjeljno." />
+    
+    @endsection
 @section('content')
 <section id="sectionp">
 
@@ -13,7 +32,7 @@
     <ul class="tabs clearfix" data-tabgroup="first-tab-group">
 
         @foreach($sezone as $sezona)
-            <li><a href="#{{ $sezona->id }} ">{{ $sezona->title }} </a></li>
+            <li><a class="{{ $sezona->id }}"  href="#{{ $sezona->id }} ">{{ $sezona->title }} </a></li>
         @endforeach
 
     </ul>
@@ -27,16 +46,29 @@
 
                         <div class="row">
                             {{-- epizoda --}}
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mbt30">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-0 px-0">
+
 
                                 <div class="episode my-2 d-flex">
                                     <a class="episode-img" href="/epizoda/{{ $epizoda->id }}"><img
                                             src="/assets/images/epizoda/{{ $epizoda->image }}" alt="Episode Image"></a>
                                     <div class="episode-body ">
+                                        <div class="episode-guest"> Gost emisije : {{ $epizoda->guest1 }}</div>
+    
                                         <div class="d-flex">
                                             <h6 class="episode-sub_title ghost font-weight-bold">
-                                                {{ $epizoda->sezona->title }}</h6>
-                                            <div class="share-button"><img src="/assets/images/Share-ikonica.svg" alt="">
+                                               Epizoda:{{ $epizoda->brojEpizode }}</h6>
+                                            <div class="share-button">
+                                                
+    
+                                             
+                                                
+                                                <img src="/assets/images/Group4.svg" alt="">
+                                           
+                                                <div class="fb-share-button" data-href="https://igorivlado.com/epizoda/{{ $epizoda->id }}" data-layout="button" 
+                                                    data-size="small"><a target="_blank" 
+                                                    href="https://igorivlado.com/epizoda/{{ $epizoda->id }}" class="fb-xfbml-parse-ignore"></a></div>
+                                                    
                                             </div>
     
                                         </div>
@@ -53,11 +85,14 @@
                                                            @endphp... </p>
     
                                            </div>
-                                        <div class="soundcloud-main"> {!!$epizoda->sc_url!!}</div>
-                                        <div class="episode-guest"> Gost emisije : {{ $epizoda->guest1 }}</div>
+                                  {{--          <div class="posRel">  
+                                            <a href="/epizoda/{{ $epizoda->id }}">        <div class="scOverlay">   </div> </a> 
+                                         <div class="soundcloud-main"> {!!$epizoda->sc_url!!} </div>
+    
+                                        </div> --}}
                                     </div>
                              </div>
-                            </div>
+                        </div>
                             {{-- kraj epizode --}}
 
 

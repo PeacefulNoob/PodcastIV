@@ -1,9 +1,10 @@
 		<!--Footer Section-->
-		<section>
+		<section class="mt-2">
 		    <footer>
 				<div class="row">
 		            <div class="col-lg-12 m-auto text-center">
-		                <div class="patreon"><a href="https://www.patreon.com/bePatron?u=17793118" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></div>
+						<div class="patreon"><a target="_blank"  class="embedPatreon" href="https://www.patreon.com/bePatron?u=17793118" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+							</div>
 
 		            </div>
 		        </div>
@@ -21,10 +22,10 @@
 
 		                        <ul class="list-unstyled footerLista">
 		                            <li>
-		                                <a href="#!">Soundcloud</a>
+		                                <a  target="_blank" href="https://soundcloud.com/igorivladopodcast">Soundcloud</a>
 		                            </li>
 		                            <li>
-		                                <a href="#!">Youtube</a>
+		                                <a target="_blank"  href="https://www.youtube.com/channel/UCdXrpoMIetYqThag7DZDAMw">Youtube</a>
 		                            </li>
 
 		                        </ul>
@@ -34,10 +35,10 @@
 
 		                        <ul class="list-unstyled footerLista">
 		                            <li>
-		                                <a href="#!">Instagram </a>
+		                                <a target="_blank"  href="https://www.instagram.com/igorivladopodcast/">Instagram </a>
 		                            </li>
 		                            <li>
-		                                <a href="#!">Facebook</a>
+		                                <a  target="_blank" href="https://www.facebook.com/igorivladopodcast/">Facebook</a>
 		                            </li>
 
 		                        </ul>
@@ -47,19 +48,19 @@
 
 		                        <ul class="list-unstyled footerLista">
 		                            <li>
-		                                <a href="#!">Portal Analitika</a>
+		                                <a target="_blank" href="https://www.portalanalitika.me/">Portal Analitika</a>
 		                            </li>
 		                            <li>
-		                                <a href="#!">  Red Bull CG</a>
+		                                <a  target="_blank" href="https://www.instagram.com/redbullcg/">  Red Bull CG</a>
 									</li>
 									<li>
-		                                <a href="#!">  La Mia Casa</a>
+		                                <a  target="_blank" href="https://www.facebook.com/lamiacasaPG/">  La Mia Casa</a>
 									</li>
 									<li>
-		                                <a href="#!">QQRIQ</a>
+		                                <a  target="_blank" href="https://qqriq.me/">QQRIQ</a>
 									</li>
 									<li>
-		                                <a href="#!"> Nord Pixels</a>
+		                                <a target="_blank"  href="https://nordpixels.me/"> Nord Pixels</a>
 									</li>
 								
 
@@ -70,14 +71,14 @@
 
 		                        <ul class="list-unstyled footerLista">
 		                            <li>
-		                                <a href="#!">Podcast </a>
+		                                <a href="/podcast">Podcast </a>
 		                            </li>
 		                            <li>
-		                                <a href="#!"> Mediji</a>
+		                                <a href="/post"> Mediji</a>
 									</li>
-									<li>
+								{{-- 	<li>
 		                                <a href="#!"> O nama</a>
-									</li>
+									</li> --}}
 									<li>
 		                                <a href="/contact"> Saradnja</a>
 		                            </li>

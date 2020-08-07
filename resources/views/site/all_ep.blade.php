@@ -1,4 +1,23 @@
 @extends('layouts.main')
+@section('head_index')
+
+	<!-- META DATA -->
+    <title>Igor i Vlado Podcast | {{$sezona->title}} </title>
+
+    <meta name="description" content="Podcast Igor i Vlado je naš pokušaj - Igora Majera, organizatora sportskih događaja i Vlada Perovića, Ivinog tate - da izliječimo zajedničku hiperaktivnost terapeutskim ''dušenjem'' u vremenskom okviru od sat do dva makar jednom nedjeljno. ">
+    <meta name="author" content="QQRIQ PeacefulNoob">
+    <meta name="keywords" content="Igor i Vlado Podcast | Sezona {{$sezona->title}}">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <meta property="og:image" content="https://igorivlado.com/assets/images/shareOg.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://igorivlado.com/sezona/{{$sezona->id}}" />
+    <meta property="og:title" content="Igor i Vlado Podcast | Sezona {{$sezona->title}}" />
+    <meta property="og:description" content="Podcast Igor i Vlado je naš pokušaj - Igora Majera, organizatora sportskih događaja i Vlada Perovića, Ivinog tate - da izliječimo zajedničku hiperaktivnost terapeutskim ''dušenjem'' u vremenskom okviru od sat do dva makar jednom nedjeljno. " />
+    
+    @endsection
 @section('content')
  
     <section id="section2" class="my-5">

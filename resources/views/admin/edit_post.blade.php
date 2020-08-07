@@ -27,7 +27,7 @@
 									<input type="text" name="title" class="form-control" value="{{$post->title}}">
 								</div>
 							
-								<div class="form-group">
+							{{-- 	<div class="form-group">
 									<label class="form-label text-dark">Kategorija</label>
 									<select name ="cat_id" class="form-control custom-select">
 										<option value="{{$post->cat_id}}">{{$post->cat_id}}</option>
@@ -36,7 +36,7 @@
 							    	@endforeach
 									</select>
 								</div>
-							
+							 --}}
 						
 								<div class="form-group">
 									<label class="form-label text-dark">Opis</label>

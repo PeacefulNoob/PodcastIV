@@ -1,4 +1,27 @@
 @extends('layouts.main')
+
+@section('head_index')
+
+	<!-- META DATA -->
+    <title>Igor i Vlado Podcast | Početna Strana</title>
+
+    <meta name="description" content="Igor i Vlado Podcast | Početna Strana">
+    <meta name="author" content="QQRIQ PeacefulNoob">
+    <meta name="keywords" content="Igor i Vlado Podcast | Početna Strana">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <meta property="og:image" content="https://igorivlado.com/assets/images/shareOg.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://igorivlado.com/" />
+    <meta property="og:title" content="Igor i Vlado Podcast | Početna Strana" />
+    <meta property="og:description" content="Igor i Vlado Podcast | Početna Strana" />
+    
+    @endsection
+
+
+
 @section('content')
 <section id="section1">
 
@@ -16,7 +39,7 @@
                 @foreach($sezone as $sezona)
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                         <a href="/sezona/{{ $sezona->id }}">
-                            <button class="buttonSeason">
+                        <button class="buttonSeason" data-id="{{ $sezona->id}}">
                                 @php
 
                                     echo substr($sezona->title, 0, 14);
@@ -25,6 +48,17 @@
                         </a>
                     </div>
                 @endforeach
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+                <a href="/noSeason">
+                    <button class="buttonSeason">
+                      
+
+                              Sezona 4
+                         
+                        </button>
+                    </a>
+                </div>
+
             @else
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
 
@@ -55,7 +89,7 @@
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-0 px-0">
 
 
-                            <div class="episode my-2 d-flex">
+                            <div class="episode my-2 p0  d-flex">
                                 <a class="episode-img" href="/epizoda/{{ $epizoda->id }}"><img
                                         src="/assets/images/epizoda/{{ $epizoda->image }}" alt="Episode Image"></a>
                                 <div class="episode-body ">
@@ -63,17 +97,27 @@
 
                                     <div class="d-flex">
                                         <h6 class="episode-sub_title ghost font-weight-bold">
-                                            {{ $epizoda->sezona->title }}</h6>
-                                        <div class="share-button"><img src="/assets/images/Group4.svg" alt="">
+                                           Epizoda:{{ $epizoda->brojEpizode }}</h6>
+                                        <div class="share-button">
+                                            
+
+                                         
+                                            
+                                            <img src="/assets/images/Group4.svg" alt="">
+                                       
+                                            <div class="fb-share-button" data-href="https://igorivlado.com/epizoda/{{ $epizoda->id }}" data-layout="button" 
+                                                data-size="small"><a target="_blank" 
+                                                href="https://igorivlado.com/epizoda/{{ $epizoda->id }}" class="fb-xfbml-parse-ignore"></a></div>
+                                                
                                         </div>
 
                                     </div>
-                                    <h5 class="episode-title mt-1 mb-3"><a href="/epizoda/{{ $epizoda->id }}">
+                                    <h4 class="episode-title mt-1 mb-3"><a href="/epizoda/{{ $epizoda->id }}">
                                             @php
                                                 echo substr($epizoda->title, 0, 60);
                                             @endphp
                                         </a>
-                                    </h5>
+                                    </h4>
                                     <div class="episode-desc mb-1">
                                         <p class="ghost">@php
 
@@ -81,7 +125,11 @@
                                                        @endphp... </p>
 
                                        </div>
-                                    <div class="soundcloud-main"> {!!$epizoda->sc_url!!}</div>
+                              {{--          <div class="posRel">  
+                                        <a href="/epizoda/{{ $epizoda->id }}">        <div class="scOverlay">   </div> </a> 
+                                     <div class="soundcloud-main"> {!!$epizoda->sc_url!!} </div>
+
+                                    </div> --}}
                                 </div>
                          </div>
                     </div>
@@ -94,7 +142,12 @@
                           break;
                         ?>
     @endforeach
-
+    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 ml-auto mr-0  px-5">
+        <a href="/sezona/1">  <button  class="buttonSeason dark">
+              POGLEDAJ SVE
+          </button>
+      </a>
+      </div>
 @else
     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6">
         <a href="#">
@@ -116,13 +169,13 @@
         </div>
         <div class="row pogledajSve">
 
-            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 mr-auto ml-0 text-white">
+            <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 mr-auto ml-0 text-white">
                 <p>Igor i vlado u medijima je mjesto na kome ste u mogućnosti da ispratite cjelokupan rad ova dva
                     fenomena ljudske kreacije i pročitate po koju pametnu o sportu, životu, naciji, a ne i politici. Ođe
                     neki opis osmislite da ubačimo. Poy!</p>
             </div>
-            <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-xs-12 ml-auto mr-0  px-5">
-              <a href="/post">  <button class="buttonSeason">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 ml-auto mr-0  px-5">
+              <a href="/post">  <button href="/post" class="buttonSeason">
                     POGLEDAJ SVE
                 </button>
             </a>

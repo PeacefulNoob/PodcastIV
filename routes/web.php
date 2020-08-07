@@ -18,9 +18,12 @@ Route::resource('post','PostsController');
 
 Route::get('/', 'SezonaController@index');
 
-Route::get('/podcast', 'SezonaController@podcast');
+Route::get('/podcast/{id}', 'SezonaController@podcast');
 Route::get('/singleBlog', function () {
     return view('site.blog_info');
+});
+Route::get('/noSeason', function () {
+    return view('site.noSeason');
 });
 Route::get('/contact', "ContactController@create");
 Route::post('Podcast Website', [

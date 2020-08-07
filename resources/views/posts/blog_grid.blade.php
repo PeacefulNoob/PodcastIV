@@ -1,7 +1,32 @@
 @extends('layouts.main')
+@section('head_index')
 
+	<!-- META DATA -->
+    <title>Igor i Vlado Podcast | Mediji</title>
+
+    <meta name="description" content="Igor i Vlado Podcast | Igor i vlado u medijima je mjesto na kome ste u mogućnosti da ispratite cjelokupan rad ova dva fenomena ljudske kreacije">
+    <meta name="author" content="QQRIQ PeacefulNoob">
+    <meta name="keywords" content="Igor i Vlado Podcast | Mediji">
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <meta property="og:image" content="https://igorivlado.com/assets/images/shareOg.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://igorivlado.com/post" />
+    <meta property="og:title" content="Igor i Vlado Podcast | Mediji" />
+    <meta property="og:description" content="Igor i vlado u medijima je mjesto na kome ste u mogućnosti da ispratite cjelokupan rad ova dva fenomena ljudske kreacije i pročitate po koju pametnu o sportu, životu, naciji, a ne i politici. Ođe neki opis osmislite da ubačimo. Poy!" />
+    
+    @endsection
 @section('content')
-
+<style>
+    .nav-container {
+    position: relative !important;
+    }
+    main {
+    margin-top: 0% !important;
+}
+</style>
 		<!--Breadcrumb-->
 		<section>
 			<div class="bannerimg cover-image " >
@@ -20,7 +45,7 @@
 		</section>
 		<!--/Breadcrumb-->
 <!--Add listing-->
-<section class="sptb my-5">
+<section class="sptb py-5 my-5">
     <div class="container">
         <div class="row">
             <!--Add lists-->
@@ -46,7 +71,7 @@
 										<i class="fa fa-comment-o text-muted mr-2"></i>{{$post->comments->count()}} Komentara
                                     </div>
                                 </div>
-                                <a href="#" class="text-dark">
+                                <a href="/post/{{$post->id}}}" class="text-dark">
                                     <h4 class="font-weight-semibold">  @php
                                                         
                                         echo substr($post->title, 0, 14);

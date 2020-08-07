@@ -23,8 +23,8 @@
 
 
 		<!-- Owl Theme css-->
-		<link href="/assets/css/owl.carousel.css" rel="stylesheet" />
-</head>
+{{-- 		<link href="/assets/css/owl.carousel.css" rel="stylesheet" />
+ --}}</head>
 <body>
     <div id="app">
 	   @include('admin.admin_navbar')
@@ -46,9 +46,9 @@
 		<script src="/assets/js/bootstrap.min.js"></script>
 
 		
-		<!--Owl Carousel js -->
+{{-- 		<!--Owl Carousel js -->
 		<script src="/assets/owl-carousel.js"></script>
-		<script src="/assets/owl.carousel.js"></script>
+		<script src="/assets/owl.carousel.js"></script> --}}
 
 </body>
 </html>

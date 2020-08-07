@@ -18,6 +18,8 @@ class CreateSezonasTable extends Migration
             $table->string('title');
             $table->text('description')->nullable();
             $table->integer('user_id');
+            $table->string('active');
+
             $table->timestamps();
         });
     }
