@@ -25,7 +25,7 @@
 <div class="my-5">
     
         <section class="leftView d-flex">
-            <div class="single_episode my-2 col-xl-9 col-lg-9 col-md-7 col-sm-12 col-xs-12 ">
+            <div class="single_episode my-2 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
                 <div class="single_episode-body">
                     <h6 class="single_episode-sub_title my-3 font-weight-bold">Epizoda : {{$epizoda->brojEpizode}}</h6>
                   
@@ -46,14 +46,14 @@
             </div>
 
             <div class="col-12 ">
-                <h3 class="my-5">Poslušajte epizodu na našem Soundcloud kanalu</h3>
+                <h6 class="my-5">Poslušajte epizodu na našem Soundcloud kanalu</h6>
                 <div class="scDiv">
                 {!!$epizoda->sc_url!!}
             </div>
         </div>
                 @if ($epizoda->yt_url)
                 <div class="col-12 my-5">
-                    <h3 class="my-5">Pogledajte epizodu na našem Youtube kanalu</h3>
+                    <h6 class="my-5">Pogledajte epizodu na našem Youtube kanalu</h6>
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{$epizoda->yt_url}}"></iframe>
                 </div>
@@ -102,13 +102,13 @@
                                             @foreach ($sezona->epizoda as $epizoda)
                                                 <div class="">
                                                     <div class="episode h-auto my-2">
-                                                    <a class="episode-img tab_image" href="/epizoda/{{$epizoda->id}}"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
-                                                    <div class="episode-body mgr32 tabBody">
-                                                        <p class="episode-title font-weight-bold"><a href="/epizoda/{{$epizoda->id}}">
-                                                            @php
+                                                    <a class="episode-img sideImage tab_image" href="/epizoda/{{$epizoda->id}}"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
+                                                    <div class="episode-body mgr32 ">
+                                                        <p class="episode-title  sideEpT"><a href="/epizoda/{{$epizoda->id}}">
+                                                        
 												
-                                                            echo substr($epizoda->title, 0, 20);
-                                                        @endphp 
+                                                Ep:  {{  $epizoda->brojEpizode}}       {{  $epizoda->title}}  
+                                                 
                                                   </a></p>
                                                         
                                                     </div>

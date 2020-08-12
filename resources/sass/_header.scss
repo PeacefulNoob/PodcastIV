@@ -156,37 +156,6 @@ nav {
     padding: 0;
 
 
-    input[type="text"] {
-        height: 28px;
-        font-size: inherit;
-        display: inline-block;
-        font-weight: 60;
-        border: none;
-        outline: none;
-        color: #555;
-        padding-left: 60px;
-        width: 0px;
-        position: absolute;
-        top: 50%;
-        transform: translate(0px, -50%);
-        left: 2%;
-        background: none;
-        z-index: 3;
-        -webkit-transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
-        transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
-        cursor: pointer;
-    }
-
-    input[type="text"]:focus:hover {
-        border-bottom: 1px solid #BBB;
-    }
-
-    input[type="text"]:focus {
-        width: 200px;
-        z-index: 1;
-        border-bottom: 1px solid #BBB;
-        cursor: text;
-    }
 
     input[type="submit"] {
         height: 28px;
@@ -204,14 +173,20 @@ nav {
         cursor: pointer;
         opacity: 0.4;
         cursor: pointer;
-        -webkit-transition: opacity .4s ease;
-        transition: opacity .4s ease;
+        -webkit-transition:0.4s ease;
+        transition: 0.4s ease;
     }
 
     input[type="submit"]:hover {
         opacity: 0.8;
     }
+
+    input[type="submit"]:hover .searchText {
+        opacity: 0.1;
+    }
+
 }
+
 
 .kockaZuta {
     height: 100%;

@@ -60,6 +60,10 @@ ul {
     padding: 0px !important;
 }
 
+.sideImage {
+    width: 25% !important;
+}
+
 .episode {
     height: 100%;
     position: relative;
@@ -80,7 +84,8 @@ ul {
     }
 
     .mgr32 {
-        margin: 3% 2% !important;
+        margin: 3% 0% !important;
+        padding-left: 30%;
 
     }
 

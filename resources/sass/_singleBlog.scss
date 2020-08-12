@@ -1,5 +1,5 @@
 .leftView {
-    width: 65%;
+    width: 62%;
     margin-left: 10%;
     flex-wrap: wrap;
     margin-right: 25%;
@@ -13,7 +13,7 @@
     right: 0;
     height: 100%;
     padding-top: 60px;
-    width: 21%;
+    width: 26%;
     background: #fff;
     z-index: 10;
     box-shadow: 0 0 0 1px rgba(181, 201, 227, .12), 0 8px 16px 0 rgba(181, 201, 227, .24);
@@ -79,7 +79,7 @@
     .single_episode-body {
         height: 100%;
         position: relative;
-        padding: 2%;
+        padding: 1%;
 
         .single_episode-title {
 
@@ -144,4 +144,9 @@
         width: 100%;
         position: relative !important;
     }
+}
+
+.sideEpT {
+    font-size: 18px !important;
+    margin-right: 15px;
 }

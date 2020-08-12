@@ -27,9 +27,20 @@
 		<div class="header2 d-flex">
 			<div class="search">
 				<div id="wrap">
-				<form action="" autocomplete="on">
-				<input id="search" name="search" type="text" placeholder="Šta želite pronaći? "><input id="search_submit" value="Rechercher" type="submit">
-				</form>
+		
+			
+
+			<div class="search-background bg-transparent">
+					<div class="form-group  select2-lg  mb-0 bg-white searchText">
+						<select class="form-control select2-show-search  border-bottom-0" data-placeholder="Šta želite pronaći? "  id="search"  onchange="javascript:location.href = this.value;">
+							<option value="#">Šta želite pronaći? </option>
+						@foreach ($epizode as $epizoda)
+						<option value="/epizoda/{{$epizoda->id}}">{{$epizoda->title}}</option>
+						@endforeach
+					</select>
+					</div>
+			</div>
+				<input id="search_submit" value="Rechercher" type="submit">
 				</div>
 			</div>
 			<nav>

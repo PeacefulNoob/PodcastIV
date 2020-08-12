@@ -1,5 +1,5 @@
 		<!--Footer Section-->
-		<section class="mt-2">
+		<section class="mt-2 sectionFooter" >
 		    <footer>
 				<div class="row">
 		            <div class="col-lg-12 m-auto text-center">
@@ -90,7 +90,9 @@
 
 		                        <ul class="list-unstyled footerLista">
 		                            <li>
-		                                <a href="#!">igorivlado@gmail.com</a>
+		                                <a href="#!">
+											igorivladopodcast@gmail.com
+										</a>
 		                            </li>
 		                          
 

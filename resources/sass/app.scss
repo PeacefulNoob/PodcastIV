@@ -113,7 +113,7 @@ a {
 }
 
 p {
-    word-break: break-all;
+    word-wrap: break-word;
     margin: 0 0 10px;
     font-size: 16px !important;
 }
@@ -129,6 +129,14 @@ main {
 #section1 {
     margin-top: -8%;
 
+}
+
+.uskoro {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 35%;
+    transform: translate(-8%, -19%);
 }
 
 .noImageSeas {
@@ -319,4 +327,161 @@ img {
     font-weight: 900 !important;
     color: white;
     font-size: 136px !important;
+}
+
+.select2-sm .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    top: 80% !important;
+}
+
+select.form-control.select-lg {
+    height: 46px !important;
+    padding: 10px 16px !important;
+    font-size: 17px !important;
+    border-radius: 3px !important;
+}
+
+select.form-control.select-sm {
+    height: 30px !important;
+    padding: 0px 10px 1px 10px !important;
+    border-radius: 3px !important;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: .9375rem;
+    color: #605e7e;
+    height: 39px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e8ebf3;
+    border-radius: 3px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control.border-white {
+    border: 1px solid rgba(167, 180, 201, .7) !important;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #e8ebf3 !important;
+    border-radius: 4px;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    color: #3d4e67;
+    background-color: #fff;
+    border-color: #4c8aec;
+    outline: 0;
+}
+
+.select2-container--default .select2-selection--multiple {
+    background-color: #fff;
+    border: 1px solid #e8ebf3 !important;
+    border-radius: 4px;
+    cursor: text;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 1px solid #e8ebf3 !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #f1eef7 !important;
+    border: 1px solid #f1eef7 !important;
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+    .form-control {
+        transition: none;
+    }
+}
+
+.form-control::-ms-expand {
+    background-color: transparent;
+    border: 0;
+}
+
+.form-control:focus {
+    color: #6f6e6e;
+    background-color: #fff;
+    border-color: #e8ebf3;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #a7b4c9;
+    opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+    color: #a7b4c9;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #a7b4c9;
+    opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+    color: #a7b4c9;
+    opacity: 1;
+}
+
+.form-control {
+    color: #99c1b2;
+    opacity: 1;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #f1eef7;
+    opacity: 1;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 2.425rem;
+}
+
+.select2-container .select2-selection--single {
+    height: 2.375rem;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+}
+
+select.form-control:focus::-ms-value {
+    color: #3d4e67;
+    background-color: #fff;
+}
+
+.search-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.searchText {
+    height: 28px;
+    width: 100%;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-105%, -50%);
+    left: 2%;
+    z-index: 2;
+    cursor: pointer;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.search :hover .searchText {
+    transform: translate(35px, -50%);
+
+
 }

@@ -126,7 +126,7 @@
                     <section class="tabSezoneInfo"><ul class="tabs clearfix" data-tabgroup="first-tab-group">
         
                         @foreach ($sezone as $sezona)
-                        <li><a href="#{{$sezona->id}} ">
+                        <li><a href="#{{$sezona->id}} " class="{{$sezona->active}}">
                             <p>
                            @php
                                                         
@@ -136,10 +136,10 @@
                         @endforeach
               
                       </ul>
-                      <section id="first-tab-group" class="tabgroup">
+                      <section id="first-tab-group" class="tabgroup1">
                         @foreach ($sezone as $sezona)
         
-                                  <div id="{{$sezona->id}}">
+                                  <div id="{{$sezona->id}}" >
                                      <div  class="wrap-bg">
                                           
                                           <div class="row">
@@ -157,13 +157,13 @@
                                                     @foreach ($sezona->epizoda as $epizoda)
                                                         <div class="">
                                                             <div class="episode h-auto my-2">
-                                                            <a class="episode-img tab_image" href="/epizoda/{{$epizoda->id}}"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
-                                                            <div class="episode-body mgr32 tabBody">
-                                                                <p class="episode-title font-weight-bold"><a href="/epizoda/{{$epizoda->id}}">
-                                                                    @php
+                                                            <a class="episode-img sideImage tab_image" href="/epizoda/{{$epizoda->id}}"><img src="/assets/images/epizoda/{{$epizoda->image}}" alt="Episode Image"></a>
+                                                            <div class="episode-body mgr32 ">
+                                                                <p class="episode-title  sideEpT"><a href="/epizoda/{{$epizoda->id}}">
+                                                                
                                                         
-                                                                    echo substr($epizoda->title, 0, 20);
-                                                                @endphp 
+                                                        Ep :  {{  $epizoda->brojEpizode}}       {{  $epizoda->title}}  
+                                                         
                                                           </a></p>
                                                                 
                                                             </div>

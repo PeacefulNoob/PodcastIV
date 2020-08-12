@@ -24,11 +24,15 @@ window.jQuery(document).ready(function ($) {
     })(jQuery); // end jQuery
 
 
+    $('.search').select2({
+        minimumResultsForSearch: Infinity
+    });
+
 
 
     $('.tabgroup1 > div').hide();
     $('.tabgroup1 > div:last-of-type').show();
-    
+
     $('.tabs a').click(function (e) {
         e.preventDefault();
         var $this = $(this),
@@ -92,3 +96,10 @@ window.jQuery(document).ready(function ($) {
         $("#global-loader").fadeOut("slow");
     });
 })(jQuery);
+
+
+// Select2
+$('.dataTables_length select').select2({
+    minimumResultsForSearch: Infinity
+});
+}

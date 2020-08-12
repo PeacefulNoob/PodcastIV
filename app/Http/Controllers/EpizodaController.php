@@ -113,9 +113,11 @@ class EpizodaController extends Controller
      */
     public function show(Epizoda $epizoda)
     {
+        $epizode=Epizoda::orderBy('created_at', 'DESC')->get();
+
         $sezone= Sezona::all();
         $epizoda= Epizoda::findOrFail($epizoda->id);
-        return view('site.podcast_info', compact('epizoda','sezone'));
+        return view('site.podcast_info', compact('epizoda','sezone','epizode'));
     }
 
     /**
