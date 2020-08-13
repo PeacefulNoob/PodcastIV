@@ -66,12 +66,9 @@ fjs.parentNode.insertBefore(js, fjs);
 		<!-- JQuery js-->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="/assets/js/select2.js"></script>
-
+		<script src="/assets/select2/select2.full.min.js"></script>
 		<script src="/assets/js/myJquery.js"></script>
 		<script src="/assets/js/main.js"></script>
-
-		<script src="/assets/select2/select2.full.min.js"></script>
 
 		<!-- Bootstrap js -->
 		<script src="/assets/js/bootstrap.js"></script>

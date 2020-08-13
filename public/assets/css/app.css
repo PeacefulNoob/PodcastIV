@@ -1645,9 +1645,9 @@ select.form-control:focus::-ms-value {
     transition: 0.4s ease;
 }
 
-.search :hover .searchText {
+/* .search :hover .searchText {
     -webkit-transform: translate(35px, -50%);
     transform: translate(35px, -50%);
 }
-
+ */
 /*# sourceMappingURL=app.css.map */

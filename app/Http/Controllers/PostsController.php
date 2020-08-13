@@ -27,8 +27,9 @@ class PostsController extends Controller
     {
         $posts = Post::all();
         $users = User::all();
-      
-    return view('posts.blog_grid' , compact("posts","users"));
+        $epizode= Epizoda::all();
+
+    return view('posts.blog_grid' , compact("posts","users","epizode"));
     
     }
 

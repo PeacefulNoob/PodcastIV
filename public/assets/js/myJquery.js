@@ -24,9 +24,18 @@ window.jQuery(document).ready(function ($) {
     })(jQuery); // end jQuery
 
 
-    $('.search').select2({
-        minimumResultsForSearch: Infinity
+    $('#search1').select2({
+        minimumResultsForSearch: '',
+        placeholder: "Pretrazi "
+
     });
+
+    $("#search_submit").click(function () {
+        $(".searchText").css("transform", " translate(35px, -50%)");
+    });
+
+
+
 
 
 
@@ -96,10 +105,3 @@ window.jQuery(document).ready(function ($) {
         $("#global-loader").fadeOut("slow");
     });
 })(jQuery);
-
-
-// Select2
-$('.dataTables_length select').select2({
-    minimumResultsForSearch: Infinity
-});
-}

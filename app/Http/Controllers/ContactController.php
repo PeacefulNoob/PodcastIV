@@ -5,11 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Mail;
 use Validator;
+use App\Epizoda;
 class ContactController extends Controller
 {
     public function create()
     {
-        return view('site.contact');
+        $epizode= Epizoda::all();
+
+        return view('site.contact',compact('epizode'));
     }
 
     public function store(Request $request)

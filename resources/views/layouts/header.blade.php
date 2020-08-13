@@ -32,15 +32,17 @@
 
 			<div class="search-background bg-transparent">
 					<div class="form-group  select2-lg  mb-0 bg-white searchText">
-						<select class="form-control select2-show-search  border-bottom-0" data-placeholder="Šta želite pronaći? "  id="search"  onchange="javascript:location.href = this.value;">
+						<select class="form-control  border-bottom-0" data-placeholder="Šta želite pronaći? "  id="search1"  onchange="javascript:location.href = this.value;">
 							<option value="#">Šta želite pronaći? </option>
 						@foreach ($epizode as $epizoda)
 						<option value="/epizoda/{{$epizoda->id}}">{{$epizoda->title}}</option>
 						@endforeach
 					</select>
+
+
 					</div>
 			</div>
-				<input id="search_submit" value="Rechercher" type="submit">
+				<input id="search_submit" class="searchB" value="Rechercher" type="submit">
 				</div>
 			</div>
 			<nav>
