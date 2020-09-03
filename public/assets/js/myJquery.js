@@ -31,8 +31,24 @@ window.jQuery(document).ready(function ($) {
     });
 
     $("#search_submit").click(function () {
-        $(".searchText").css("transform", " translate(35px, -50%)");
+        $("#search1").select2("open");
+
+/*         $(".searchText").css("transform", " translate(35px, -50%)");
+ */
     });
+
+
+    /*     $("#search_submit").on("click", function(){
+
+            $(".select2-container").removeClass("select2-container--focus");
+            $(".select2-container").addClass("select2-container--below select2-container--open");
+            $(".select2-selection").attr("aria-expanded","true");
+            $(".select2-selection").attr("aria-owns","select2-search1-results");
+            $(".select2-selection").attr("aria-activedescendant","select2-search1-result-nyrb-#");
+        });
+
+
+     */
 
 
 

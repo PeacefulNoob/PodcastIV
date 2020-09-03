@@ -87,7 +87,7 @@ nav ul li ul li a {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 110px;
+  top: 115px;
   right: 0;
   height: 70px;
   width: 70px;
@@ -864,8 +864,8 @@ ul {
 
 @media only screen and (max-width: 768px) {
   .tabSezone {
-    padding-left: 1% !important;
-    padding-right: 1% !important;
+    padding-left: 5% !important;
+    padding-right: 5% !important;
   }
   .episode {
     padding: 0px 0px 10px 0px;
@@ -1045,6 +1045,10 @@ ul {
 @media only screen and (max-width: 798px) {
   .slImage {
     background-image: url(/assets/images/Homepage-cover4-Mobile.jpg) !important;
+  }
+  .postDiv {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
   }
   main {
     margin-top: 12% !important;
@@ -1603,9 +1607,10 @@ select.form-control:focus::-ms-value {
   width: 100%;
   border: none;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-105%, -50%);
-          transform: translate(-105%, -50%);
+  top: 25%;
+  /*  transform: translate(-105%, -50%); */
+  -webkit-transform: translate(35px, -50%);
+          transform: translate(35px, -50%);
   left: 2%;
   z-index: 2;
   cursor: pointer;
@@ -1613,8 +1618,20 @@ select.form-control:focus::-ms-value {
   transition: 0.4s ease;
 }
 
+/* 
 .search :hover .searchText {
-  -webkit-transform: translate(35px, -50%);
-          transform: translate(35px, -50%);
+    transform: translate(35px, -50%);
+
+
+}
+ */
+.select2-selection--single {
+  display: none !important;
+  visibility: hidden;
+}
+
+.select2-dropdown--below {
+  border: 0.5px solid #363636 !important;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=app.css.map */

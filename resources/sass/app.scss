@@ -471,14 +471,16 @@ select.form-control:focus::-ms-value {
     width: 100%;
     border: none;
     position: absolute;
-    top: 50%;
-    transform: translate(-105%, -50%);
+    top: 25%;
+    /*  transform: translate(-105%, -50%); */
+    transform: translate(35px, -50%);
     left: 2%;
     z-index: 2;
     cursor: pointer;
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
 }
+
 /* 
 .search :hover .searchText {
     transform: translate(35px, -50%);
@@ -486,3 +488,12 @@ select.form-control:focus::-ms-value {
 
 }
  */
+.select2-selection--single {
+    display: none !important;
+    visibility: hidden;
+}
+
+.select2-dropdown--below {
+    border: 0.5px solid #363636 !important;
+    border-radius: 5px;
+}
