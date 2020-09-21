@@ -27,7 +27,7 @@ class Post extends Model
             'name' => request('name'),
             'email' => request('email'),
             'post_id' => $this->id,
-            'user_id' => $this->id
+            'user_id' => Auth()->id()
 
         ]);
    }

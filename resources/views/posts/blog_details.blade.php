@@ -80,9 +80,9 @@
                                     </div>
                                 </div>
 
-                        </div>
                     @endforeach
 
+                </div>
 
             @else
                 <div class="post-comments">
