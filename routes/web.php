@@ -20,10 +20,12 @@ Route::get('/', 'SezonaController@index');
 
 Route::get('/podcast/{id}', 'SezonaController@podcast');
 Route::get('/singleBlog', function () {
+  
     return view('site.blog_info');
 });
 Route::get('/noSeason', function () {
-    return view('site.noSeason');
+    $epizode = App\Epizoda::all();
+    return view('site.noSeason',compact('epizode'));
 });
 Route::get('/contact', "ContactController@create");
 Route::post('Podcast Website', [

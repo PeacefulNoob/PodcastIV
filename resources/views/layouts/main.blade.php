@@ -31,8 +31,7 @@
 		<link href="/assets/css/app.css" rel="stylesheet" />
 
 
-		{{-- <!-- Owl Theme css-->
-		<link href="/assets/css/owl.carousel.css" rel="stylesheet" /> --}}
+
 
 	
 
@@ -62,19 +61,19 @@ js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-        {{-- SKRIPTE .////////////////////////////////////////////////////////////////////////////////////////////////////////////////////--}}
+        {{-- SKRIPTE .////////////////////////////////z////////////////////////////////////////////////////////////////////////////////////--}}
 		<!-- JQuery js-->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="/assets/select2/select2.full.min.js"></script>
-		<script src="/assets/js/myJquery.js"></script>
-		<script src="/assets/js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
+		<script src="/assets/select2/select2.full.min.js" defer></script>
+		<script src="/assets/js/myJquery.js" async></script>
+		<script src="/assets/js/main.js" async></script>
 
 		<!-- Bootstrap js -->
-		<script src="/assets/js/bootstrap.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="/assets/js/bootstrap.js" async></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js " async></script>
 		
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="https://www.google.com/recaptcha/api.js"  defer></script>
 
 	
 	</body>

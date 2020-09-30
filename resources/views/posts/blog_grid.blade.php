@@ -20,9 +20,7 @@
     @endsection
 @section('content')
 <style>
-    .nav-container {
-    position: relative !important;
-    }
+  
     main {
     margin-top: 0% !important;
 }

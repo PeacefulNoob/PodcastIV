@@ -1,123 +1,46 @@
-window.jQuery(document).ready(function ($) {
-    (function ($) { // Begin jQuery
-        $(function () { // DOM ready
-            // If a link has a dropdown, add sub menu toggle.
-            $('nav ul li a:not(:only-child)').click(function (e) {
-                $(this).siblings('.nav-dropdown').toggle();
-                // Close one dropdown when selecting another
-                $('.nav-dropdown').not($(this).siblings()).hide();
-                e.stopPropagation();
-            });
-            // Clicking away from dropdown will remove the dropdown class
-            $('html').click(function () {
-                $('.nav-dropdown').hide();
-            });
-            // Toggle open and close nav styles on click
-            $('#nav-toggle').click(function () {
-                $('nav ul').slideToggle();
-            });
-            // Hamburger to X toggle
-            $('#nav-toggle').on('click', function () {
-                this.classList.toggle('active');
-            });
-        }); // end DOM ready
-    })(jQuery); // end jQuery
-
-
-    $('#search1').select2({
-        minimumResultsForSearch: '',
-        placeholder: "Pretrazi "
-
-    });
-
-    $("#search_submit").click(function () {
-        $("#search1").select2("open");
-
-/*         $(".searchText").css("transform", " translate(35px, -50%)");
- */
-    });
-
-
-    /*     $("#search_submit").on("click", function(){
-
-            $(".select2-container").removeClass("select2-container--focus");
-            $(".select2-container").addClass("select2-container--below select2-container--open");
-            $(".select2-selection").attr("aria-expanded","true");
-            $(".select2-selection").attr("aria-owns","select2-search1-results");
-            $(".select2-selection").attr("aria-activedescendant","select2-search1-result-nyrb-#");
-        });
-
-
-     */
-
-
-
-
-
-
-    $('.tabgroup1 > div').hide();
-    $('.tabgroup1 > div:last-of-type').show();
-
-    $('.tabs a').click(function (e) {
-        e.preventDefault();
-        var $this = $(this),
-            tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
-            others = $this.closest('li').siblings().children('a'),
-            target = $this.attr('href');
-        others.removeClass('active');
-        $this.addClass('active');
-        $(tabgroup).children('div').hide();
-        $(target).show();
-
-
-    });
-    $('.carousel').carousel({
-        interval: 3000
-    });
-
-    $('.carousel').carousel('cycle');
-
-
-    var lastNumber = window.location.href.match(/\d+$/);
-
-    showSeaseon(lastNumber);
-    /* PODKAST STRANa
-     */
-    function showSeaseon(id) {
-        $('.tabgroup > div').hide();
-
-        $('.tabgroup #' + id).show();
-        $('.' + id).addClass('active');
-    }
-
-
-    $('.tabs a').click(function (e) {
-        e.preventDefault();
-        var $this = $(this),
-            tabgroup = '#' + $this.parents('.tabs').data('tabgroup'),
-            others = $this.closest('li').siblings().children('a'),
-            target = $this.attr('href');
-        others.removeClass('active');
-        $this.addClass('active');
-        $(tabgroup).children('div').hide();
-        $(target).show();
-
-
-    });
-
-
-    $('.carousel').carousel({
-        interval: 3000
-    });
-
-    $('.carousel').carousel('cycle');
-});
-
-(function ($) {
-    "use strict";
-
-    // ______________ Global Loader
-    $(window).on("load", function (e) {
-        $("#global-loader").fadeOut("slow");
-    });
-})(jQuery);
+window.jQuery(document).ready(function (a) {
+        ! function (a) {
+            a(function () {
+                a("nav ul li a:not(:only-child)").click(function (e) {
+                    a(this).siblings(".nav-dropdown").toggle(), a(".nav-dropdown").not(a(this).siblings()).hide(), e.stopPropagation()
+                }), a("html").click(function () {
+                    a(".nav-dropdown").hide()
+                }), a("#nav-toggle").click(function () {
+                    a("nav ul").slideToggle()
+                }), a("#nav-toggle").on("click", function () {
+                    this.classList.toggle("active")
+                })
+            })
+        }(jQuery), a("#search1").select2({
+            minimumResultsForSearch: "",
+            placeholder: "Pretrazi "
+        }), a("#search_submit").click(function () {
+            a("#search1").select2("open")
+        }), a(".tabgroup1 > div").hide(), a(".tabgroup1 > div:last-of-type").show(), a(".tabs a").click(function (e) {
+            e.preventDefault();
+            var t = a(this),
+                i = "#" + t.parents(".tabs").data("tabgroup"),
+                o = t.closest("li").siblings().children("a"),
+                c = t.attr("href");
+            o.removeClass("active"), t.addClass("active"), a(i).children("div").hide(), a(c).show()
+        }), a(".carousel").carousel({
+            interval: 3e3
+        }), a(".carousel").carousel("cycle");
+        var e, t = window.location.href.match(/\d+$/);
+        e = t, a(".tabgroup > div").hide(), a(".tabgroup #" + e).show(), a("." + e).addClass("active"), a(".tabs a").click(function (e) {
+            e.preventDefault();
+            var t = a(this),
+                i = "#" + t.parents(".tabs").data("tabgroup"),
+                o = t.closest("li").siblings().children("a"),
+                c = t.attr("href");
+            o.removeClass("active"), t.addClass("active"), a(i).children("div").hide(), a(c).show()
+        }), a(".carousel").carousel({
+            interval: 3e3
+        }), a(".carousel").carousel("cycle")
+    }),
+    function (a) {
+        "use strict";
+        a(window).on("load", function (e) {
+            a("#global-loader").fadeOut("slow")
+        })
+    }(jQuery);
