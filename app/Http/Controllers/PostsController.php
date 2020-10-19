@@ -25,7 +25,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::all()->sortByDesc('created_at');
         $users = User::all();
         $epizode= Epizoda::all();
 

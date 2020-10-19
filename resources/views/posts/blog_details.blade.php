@@ -43,7 +43,7 @@
                         
                             <h2 class="font-weight-semibold">{{ $post->title }}</h2>
                      
-                        <p>{{ $post->body }}
+                        <p>{!! $post->body !!}
                     </div>
                 </div>
                 <div class="card my-3">
@@ -59,8 +59,7 @@
 
                                 <div class="media mt-0 p-5">
                                     <div class="d-flex mr-3">
-                                        <a href="#"><img class="media-object brround" alt="64x64"
-                                                src="/assets/images/user_images/{{ $comment->user->image }}"> </a>
+                                   
                                     </div>
                                     <div class="media-body">
                                         <h5 class="mt-0 mb-1 font-weight-semibold"> {{ $comment->name }}

@@ -90,7 +90,7 @@
 
 		                        <ul class="list-unstyled footerLista">
 		                            <li>
-		                                <a href="#!">
+										<a href="mailto:igorivladopodcast@gmail.com">
 											igorivladopodcast@gmail.com
 										</a>
 		                            </li>

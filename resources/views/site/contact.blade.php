@@ -50,7 +50,7 @@
                 <textarea class="input100" name="message" placeholder="Vaša poruka"></textarea>
                 <span class="focus-input100"></span>
             </div>
-            <div class="wrap-input100 ">
+            <div class="wrap-input100 txt-center">
                 <div class="g-recaptcha" data-sitekey="6Leut7oZAAAAABa5OtweVjuhOWRe2CMx6fE9CMS0"></div>
 
               </div>

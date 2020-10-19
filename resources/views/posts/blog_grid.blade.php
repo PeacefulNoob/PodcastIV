@@ -54,7 +54,7 @@
                     @foreach ($posts as $post)
                         
               
-                    <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-lg-4 col-md-6 my-4">
                         <div class="card">
                             <div class="item7-card-img">
                                 <a href="/post/{{$post->id}}"></a>
@@ -72,8 +72,8 @@
                                 <a href="/post/{{$post->id}}}" class="text-dark">
                                     <h4 class="font-weight-semibold">  @php
                                                         
-                                        echo substr($post->title, 0, 14);
-                                    @endphp </h4>
+                                        echo substr($post->title, 0, 50);
+                                    @endphp ...</h4>
                                 </a>
                                 <p> @php
                                                         

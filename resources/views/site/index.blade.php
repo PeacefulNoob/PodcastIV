@@ -93,7 +93,10 @@
                                 <a class="episode-img" href="/epizoda/{{ $epizoda->id }}"><img
                                         src="/assets/images/epizoda/{{ $epizoda->image }}" alt="Episode Image"></a>
                                 <div class="episode-body ">
+                                    @if ($epizoda->guest1)
                                     <div class="episode-guest"> Gost emisije : {{ $epizoda->guest1 }}</div>
+
+                                    @endif
 
                                     <div class="d-flex">
                                         <h6 class="episode-sub_title ghost font-weight-bold">
@@ -195,12 +198,12 @@
                         <div class="authorMedia"> {{$post->user->name}} <img src="/assets/images/iconfinder_fill-web5-18_5084662.svg" alt=""></div>
                         <div class="unit-9-content">
                             
-                            <h2>
+                            <h3>
                                 @php
 
-                                    echo substr($post->title, 0, 30);
-                                 @endphp
-                            </h2>
+                                    echo substr($post->title, 0, 150);
+                                 @endphp...
+                            </h3>
                             <span>
                                 @php
 
@@ -222,8 +225,8 @@
                                     <h4>
                                         @php
 
-                                            echo substr($post->title, 0, 30);
-                                         @endphp
+                                            echo substr($post->title, 0, 90);
+                                         @endphp...
                                     </h4>
                                     <span>
                                         @php
