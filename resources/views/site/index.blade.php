@@ -87,33 +87,23 @@
                     <div class="row">
                         {{-- epizoda --}}
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mx-0 px-0">
-
-
                             <div class="episode my-2 p0  d-flex">
                                 <a class="episode-img" href="/epizoda/{{ $epizoda->id }}"><img
                                         src="/assets/images/epizoda/{{ $epizoda->image }}" alt="Episode Image"></a>
                                 <div class="episode-body ">
                                     @if ($epizoda->guest1)
                                     <div class="episode-guest"> Gost emisije : {{ $epizoda->guest1 }}</div>
-
                                     @endif
-
                                     <div class="d-flex">
                                         <h6 class="episode-sub_title ghost font-weight-bold">
                                            Epizoda:{{ $epizoda->brojEpizode }}</h6>
                                         <div class="share-button">
-                                            
-
-                                         
-                                            
                                             <img src="/assets/images/Group4.svg" alt="">
                                        
                                             <div class="fb-share-button" data-href="https://igorivlado.com/epizoda/{{ $epizoda->id }}" data-layout="button" 
                                                 data-size="small"><a target="_blank" 
                                                 href="https://igorivlado.com/epizoda/{{ $epizoda->id }}" class="fb-xfbml-parse-ignore"></a></div>
-                                                
                                         </div>
-
                                     </div>
                                     <h4 class="episode-title mt-1 mb-3"><a href="/epizoda/{{ $epizoda->id }}">
                                             @php

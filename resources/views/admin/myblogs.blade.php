@@ -36,20 +36,20 @@
                                                 <td>
                                                     <div class="media mt-0 mb-0">
                                                         <div class="card-aside-img">
-                                                            <a href="#"></a>
+                                                            <a href="/post/{{$post->id}}/edit "></a>
                                                             <img src="/assets/images/post_images/{{$post->cover_image}}" alt="img">
                                                         </div>
                                                         <div class="media-body">
                                                             <div class="card-item-desc ml-4 p-0 mt-2">
-                                                                <a href="#" class="text-dark">
+                                                                <a href="/post/{{$post->id}}/edit " class="text-dark">
                                                                     <h6 class="font-weight-semibold">
                                                                         @php
 												
                                                                         echo substr($post->title, 0, 30);
                                                                     @endphp</h6>
                                                                 </a>
-                                                                <a href="#"><i class="fa fa-clock-o mr-1"></i>
-                                                                    {{$post->created_at}}</a><br>
+                                                                <i class="fa fa-clock-o mr-1"></i>
+                                                                    {{$post->created_at}}<br>
                                                             </div>
                                                         </div>
                                                     </div>
