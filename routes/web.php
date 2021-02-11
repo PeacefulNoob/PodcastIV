@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::resource('sezona','SezonaController');  
 Route::resource('epizoda','EpizodaController');  
 Route::resource('post','PostsController');  
+Route::resource('comments','CommentController');  
 
 Route::get('/', 'SezonaController@index');
 
@@ -40,6 +41,7 @@ Route::group(
     ['prefix' => 'admin', 'middleware' => ['auth', 'admin']],
     function () {
         Route::get('/', 'HomeController@index')->name('admin');
+        Route::get('/comments', 'HomeController@comments')->name('comments');
         Route::get('/post/showUserBlogs/{id}', 'PostsController@showUserBlogs');
 
     }

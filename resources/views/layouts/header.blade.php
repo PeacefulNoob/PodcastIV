@@ -56,18 +56,16 @@
 					
 					<h5>	<a href="/sezona/1">  Podcast</a></h5>
 				</li>
-		{{-- 		<li>
-					<h5>	<a href="#!">O nama</a></h5>
-					</li> --}}
+	
 				<li>
 					<h5>	<a href="/contact">Poslovna saradnja</a></h5>
 				</li>
 				<li>
-					<h5>	<a href="/post">Mediji</a></h5>
+					<h5>	<a href="/post">Objave</a></h5>
 				</li>
 				
 				
-
+			
 				</ul>
 			</div>
 			</nav>

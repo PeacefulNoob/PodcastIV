@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Epizoda;
+use App\Comment;
 
 class HomeController extends Controller
 {
@@ -24,6 +25,13 @@ class HomeController extends Controller
     public function index()
     {
         $epizode = Epizoda::all();
-        return view('admin.home',compact('epizode'));
+        $comments = Comment::all();
+        return view('admin.home',compact('epizode','comments'));
+    }
+    public function comments()
+    {
+
+        $comments = Comment::all();
+        return view('admin.comments',compact('comments'));
     }
 }

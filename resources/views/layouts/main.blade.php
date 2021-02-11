@@ -64,16 +64,16 @@ fjs.parentNode.insertBefore(js, fjs);
         {{-- SKRIPTE .////////////////////////////////z////////////////////////////////////////////////////////////////////////////////////--}}
 		<!-- JQuery js-->
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" async></script>
-		<script src="/assets/select2/select2.full.min.js" defer></script>
-		<script src="/assets/js/myJquery.js" async></script>
-		<script src="/assets/js/main.js" async></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+		<script src="/assets/select2/select2.full.min.js" ></script>
+		<script src="/assets/js/myJquery.js" ></script>
+		<script src="/assets/js/main.js" ></script>
 
 		<!-- Bootstrap js -->
-		<script src="/assets/js/bootstrap.js" async></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js " async></script>
+		<script src="/assets/js/bootstrap.js" ></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js " ></script>
 		
-		<script src="https://www.google.com/recaptcha/api.js"  defer></script>
+		<script src="https://www.google.com/recaptcha/api.js"  ></script>
 
 	
 	</body>

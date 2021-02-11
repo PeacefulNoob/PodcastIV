@@ -33,7 +33,7 @@
 						<div class="text-center text-white ">
 							<h1 class="">Mediji</h1>
 							<ol class="breadcrumb text-center">
-								<li class="breadcrumb-item"><a href="#">Početna</a></li>
+								<li class="breadcrumb-item"><a href="/">Početna</a></li>
 								<li class="breadcrumb-item active text-white" aria-current="page">Mediji</li>
 							</ol>
 						</div>

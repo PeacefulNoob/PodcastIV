@@ -48,7 +48,7 @@
                         </a>
                     </div>
                 @endforeach
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
+              {{--   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
                 <a href="/noSeason">
                     <button class="buttonSeason pos-relative">
                       <img src="/assets/images/Uskoro.png" class="uskoro" alt="">
@@ -58,7 +58,7 @@
                         </button>
                     </a>
                 </div>
-
+ --}}
             @else
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
 
@@ -158,14 +158,12 @@
     <div class=" div1 my-5">
 
         <div class="row justify-content-center ">
-            <h2 class="hafterGrey text-white">IGOR I VLADO U MEDIJIMA</h2>
+            <h2 class="hafterGrey text-white">IGOR I VLADO - POSLJEDNJE OBJAVE</h2>
         </div>
         <div class="row pogledajSve">
 
             <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 mr-auto ml-0 text-white">
-                <p>Igor i vlado u medijima je mjesto na kome ste u mogućnosti da ispratite cjelokupan rad ova dva
-                    fenomena ljudske kreacije i pročitate po koju pametnu o sportu, životu, naciji, a ne i politici. Ođe
-                    neki opis osmislite da ubačimo. Poy!</p>
+                <p>Naše objave su naša zaostavština. Smatramo da je od izuzetnog značaja da naše objave budu svima dostupne. Život, sport, rekreacija i nacija su samo neke od teme koje možete da pronađete na ovom mjestu.</p>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 ml-auto mr-0  px-5">
               <a href="/post">  <button href="/post" class="buttonSeason">

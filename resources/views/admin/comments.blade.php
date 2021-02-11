@@ -6,7 +6,7 @@
         <div class="col-xl-12 col-lg-12 col-md-12 my-5">
             <div class="card mb-0">
                 <div class="card-header">
-                    <h3 class="card-title">Moje Epizode</h3>
+                    <h3 class="card-title">Komentari</h3>
                 </div>
                 <div class="card-body">
                     <div class="ads-tabs">
@@ -15,51 +15,36 @@
                                 <table class="table table-bordered table-hover mb-0 text-nowrap">
                                     <thead>
                                         <tr>
-                                            <th>Broj Ep</th>
-                                            <th>Naziv Epizode</th>
-                                            <th>Opis Epizode</th>
-                                            <th>Izmjeni</th>
+                                            <th>Naziv</th>
+                                            <th>Email </th>
+                                            <th>Komentar</th>
                                             <th>Obrisi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($epizode as $epizoda)
-                                            
-                                     
+                                        @foreach ($comments as $comment)
                                         <tr>
-                                      
-                                        <td>{{$epizoda->brojEpizode}}</td>
                                             <td>
-                                                <div class="media mt-0 mb-0">
-                                                    <div class="card-aside-img">
-                                                        <a href="#"></a>
-                                                        <img src="/assets/images/epizoda/{{$epizoda->image}}" alt="img">
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <div class="card-item-desc ml-4 p-0 mt-2">
-                                                                <h6 class="font-weight-semibold">
-                                                                    @php
-												
-                                                echo substr($epizoda->title, 0, 30);
+                                                @php
+                                                echo substr($comment->name, 0, 30);
                                             @endphp</h6>
-                                                      <i class="fa fa-clock-o mr-1"></i>
-                                                                {{$epizoda->created_at}}<br>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            </td>
+                                            <td>
+                                                @php
+                                                echo substr($comment->email, 0, 30);
+                                            @endphp</h6>
                                             </td>
                                             <td>
                                             <p>@php
 												
-                                                echo substr($epizoda->description, 0, 50);
+                                                echo substr($comment->body, 0, 100);
                                             @endphp...</p>
                                             
                                             </td>
-                                            <td><a href="/epizoda/{{$epizoda->id}}/edit "><button  class="btn btn-primary btn-xs" >Izmjeni</button></a></td>
                                             <td> 
                                                 <a class="btn btn-danger btn-sm text-white" data-toggle="tooltip"
                                                       data-original-title="Delete">
-                                                            <form action="{{ route('epizoda.destroy', $epizoda->id)}}" method="post">
+                                                            <form action="{{ route('comments.destroy', $comment->id)}}" method="post">
                                                                 @csrf
                                                                 @method('DELETE')
                                                              

@@ -24,7 +24,9 @@
                     <span class="icon1 mr-3 width15"><i class="fa fa-plus"></i></span>Dodaj Blog Objavu
                 </a>
             </li>  
-              
+            <li>
+                <h5>	<a href="/admin/comments">Komentari</a></h5>
+            </li>
             </ul>
         </div>
       <a href="https://qqriq.me/">  <p class="doni">Made by @QQRIQ</p></a>

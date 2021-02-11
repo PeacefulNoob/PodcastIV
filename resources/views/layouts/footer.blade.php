@@ -74,7 +74,7 @@
 		                                <a href="/podcast">Podcast </a>
 		                            </li>
 		                            <li>
-		                                <a href="/post"> Mediji</a>
+		                                <a href="/post"> Objave</a>
 									</li>
 								{{-- 	<li>
 		                                <a href="#!"> O nama</a>
