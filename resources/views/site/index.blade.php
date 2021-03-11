@@ -23,14 +23,21 @@
 
 
 @section('content')
+        <link rel="stylesheet" href="/assets/css/style.css" />
+
 <section id="section1">
 
          <div class="slImage"></div>       
 
+        <img class="bg2 desktop" src="/assets/images/nebo.png" alt="" />
+        <img class="igor desktop" src="/assets/images/Igor-Layer-2.png" alt="" />
+        <img class="vlado desktop" src="/assets/images/Vlado-layer-3.png" alt="" />
+        <img class="text desktop" src="/assets/images/Text-layer1.png" alt="" />
+        <img class="munje2 desktop" src="/assets/images/munje.png" alt="" />
+        <img class="munje3 desktop" src="/assets/images/munje3.png" alt="" />
+        <img class="oblak desktop" src="/assets/images/oblak4.png" alt="" />
 
-   
 
-    <div class="overlayHome"></div>
     <div class="homeButtons">
 
         <div class="row">
@@ -52,13 +59,11 @@
                 <a href="/noSeason">
                     <button class="buttonSeason pos-relative">
                       <img src="/assets/images/Uskoro.png" class="uskoro" alt="">
-
                               Sezona 4
-                         
                         </button>
                     </a>
                 </div>
- --}}
+                --}}
             @else
                 <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 ">
 

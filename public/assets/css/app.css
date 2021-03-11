@@ -10,7 +10,7 @@
   position: fixed;
   top: 0%;
   width: 100%;
-  z-index: 21;
+  z-index: 221;
   background: white;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
@@ -212,8 +212,8 @@ nav ul li ul li a {
   width: 270px;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(85%, -50%);
-          transform: translate(85%, -50%);
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
   right: 14%;
   background: none;
   z-index: 3;
@@ -230,11 +230,11 @@ nav ul li ul li a {
   background: #ffffff;
 }
 
-.brandf:hover .podrzite {
+/* .brandf:hover .podrzite {
   -webkit-transform: translate(10%, -50%);
           transform: translate(10%, -50%);
   width: 300px;
-}
+} */
 
 .header1 {
   background-color: #363636;
@@ -389,6 +389,7 @@ footer .footerLogo img {
 .homeButtons {
   position: absolute;
   bottom: 7%;
+  z-index: 200;
   left: 0%;
   width: 100%;
 }
@@ -570,11 +571,9 @@ footer .footerLogo img {
 
 .slImage {
   height: 91vh;
-  background: center;
-  background-size: cover;
   margin-top: 13%;
-  background-image: url(/assets/images/Homepage-cover4.jpg);
-  width: 100%;
+  position: relative;
+   width: 100%;
 }
 
 .pogledajSve {
@@ -964,6 +963,9 @@ ul {
   .tabs li {
     width: 50% !important;
   }
+  .podrzite{
+    display: none !important;
+  }
 }
 
 .single_episode {
@@ -1050,7 +1052,11 @@ ul {
 @media only screen and (max-width: 798px) {
   .slImage {
     background-image: url(/assets/images/Homepage-cover4-Mobile.jpg) !important;
+    width: 100%;
+    background: center;
+    background-size: cover;
   }
+
   .postDiv {
     padding-left: 5% !important;
     padding-right: 5% !important;
@@ -1127,11 +1133,23 @@ ul {
   .footerKontakt {
     margin: auto;
   }
+  .desktop{
+    display: none !important;
+  }
+  .mobile{
+    display: block !important;
+  }
 }
 
 @media screen and (min-width: 799px) {
   .nav-list {
     display: table !important;
+  }
+  .desktop{
+    display: block  !important;
+  }
+  .mobile{
+    display: none !important;
   }
 }
 

@@ -23,7 +23,6 @@ class CreateEpizodasTable extends Migration
             $table->integer('sezona_id');
             $table->integer('user_id');
             $table->string('guest1');
-            $table->string('guest1');
             $table->string('brojEpizode');
 
             

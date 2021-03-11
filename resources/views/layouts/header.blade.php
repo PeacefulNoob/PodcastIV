@@ -73,7 +73,7 @@
 			<div class="brandf ">
 				<a href="https://www.patreon.com/bePatron?u=17793118">  <img src="/assets/images/patreon.svg" alt=""></a>
 
-					<h5 class="podrzite">Podržite nas na Patreonu!</h5>
+					<h5 class="podrzite">Podržite nas na Patreonu</h5>
 			
 			</div>
 		</div>
