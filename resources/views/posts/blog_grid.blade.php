@@ -55,7 +55,7 @@
                         
               
                     <div class="col-xl-4 col-lg-4 col-md-6 my-4">
-                        <div class="card">
+                        <div class="card blog_card">
                             <div class="item7-card-img">
                                 <a href="/post/{{$post->id}}"></a>
                                 <img src="/assets/images/post_images/{{$post->cover_image}}" alt="img" class="cover-image">
@@ -64,10 +64,11 @@
                             </div>
                             <div class="card-body">
                                 <div class="item7-card-desc d-flex mb-2">
-                                   <i class="fa fa-calendar-o text-muted mr-2"></i>{{ $post->created_at}}
+                                 {{--   <i class="fa fa-calendar-o text-muted mr-2"></i>{{ $post->created_at}}
                                     <div class="ml-auto">
 										<i class="fa fa-comment-o text-muted mr-2"></i>{{$post->comments->count()}} Komentara
-                                    </div>
+                                    </div> --}}
+
                                 </div>
                                 <a href="/post/{{$post->id}}}" class="text-dark">
                                     <h4 class="font-weight-semibold">  @php

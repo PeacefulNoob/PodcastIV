@@ -26,16 +26,17 @@
         <link rel="stylesheet" href="/assets/css/style.css" />
 
 <section id="section1">
+    <div class="slImage"></div>       
 
-         <div class="slImage"></div>       
+    <img class="bg2 desktop" src="./assets/images/nebo.png" alt="" />
+    <img class="igor desktop" src="./assets/images/Igor-Layer-2.png" alt="" />
+    <img class="vlado desktop" src="./assets/images/vlado.png" alt="" />
+    <img class="zid desktop" src="./assets/images/zid.png" alt="" />
 
-        <img class="bg2 desktop" src="/assets/images/nebo.png" alt="" />
-        <img class="igor desktop" src="/assets/images/Igor-Layer-2.png" alt="" />
-        <img class="vlado desktop" src="/assets/images/Vlado-layer-3.png" alt="" />
-        <img class="text desktop" src="/assets/images/Text-layer1.png" alt="" />
-        <img class="munje2 desktop" src="/assets/images/munje.png" alt="" />
-        <img class="munje3 desktop" src="/assets/images/munje3.png" alt="" />
-        <img class="oblak desktop" src="/assets/images/oblak4.png" alt="" />
+    <img class="text desktop" src="./assets/images/Text-layer1.png" alt="" />
+    <img class="munje2 desktop" src="./assets/images/munje.png" alt="" />
+    <img class="munje3 desktop" src="./assets/images/munje3.png" alt="" />
+    <img class="oblak desktop" src="./assets/images/oblak4.png" alt="" />
 
 
     <div class="homeButtons">
@@ -141,7 +142,7 @@
                         ?>
     @endforeach
     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 ml-auto mr-0  px-5">
-        <a href="/sezona/1">  <button  class="buttonSeason dark">
+        <a href="/sezona/4">  <button  class="buttonSeason dark">
               POGLEDAJ SVE
           </button>
       </a>

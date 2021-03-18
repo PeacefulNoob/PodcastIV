@@ -32,14 +32,19 @@
     <ul class="tabs clearfix" data-tabgroup="first-tab-group">
 
         @foreach($sezone as $sezona)
+            @if($sezona->id == 4)
+            <li><a class="{{ $sezona->id }} active"  href="#{{ $sezona->id }} ">{{ $sezona->title }} </a></li>
+            @break
+            @endif
             <li><a class="{{ $sezona->id }}"  href="#{{ $sezona->id }} ">{{ $sezona->title }} </a></li>
+         
         @endforeach
 
     </ul>
     <section id="first-tab-group" class="tabgroup">
         @foreach($sezone as $sezona)
 
-            <div id="{{ $sezona->id }}">
+            <div id="{{ $sezona->id }}" class="tab_div">
                 @foreach($sezona->epizoda as $epizoda)
 
                     <div class="wrap-bg">
@@ -53,8 +58,9 @@
                                     <a class="episode-img" href="/epizoda/{{ $epizoda->id }}"><img
                                             src="/assets/images/epizoda/{{ $epizoda->image }}" alt="Episode Image"></a>
                                     <div class="episode-body ">
+                                        @if ($epizoda->guest1)
                                         <div class="episode-guest"> Gost emisije : {{ $epizoda->guest1 }}</div>
-    
+                                        @endif
                                         <div class="d-flex">
                                             <h6 class="episode-sub_title ghost font-weight-bold">
                                                Epizoda:{{ $epizoda->brojEpizode }}</h6>

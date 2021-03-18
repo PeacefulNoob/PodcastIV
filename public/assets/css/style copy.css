@@ -3,8 +3,8 @@
   background-position-x: center;
   overflow: hidden;
 }
- .slImage .bg2 {
- /* width: 100%;
+/* .slImage .bg2 {
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -12,7 +12,7 @@
   background-attachment: fixed;
   background-size: cover;
   animation: animate 40s linear infinite;
-  z-index: 10;*/
+  z-index: 10;
 }
 
 @keyframes animate {
@@ -25,24 +25,15 @@
   100% {
     transform: scale(1);
   }
-} 
+} */
 
 .igor {
   position: absolute;
-  animation: igor 14s linear ;
-  width: 94%;
+  animation: animate1 10s linear infinite;
+  width: 100%;
   z-index: 15;
   bottom: 0;
-  left: 100px;
-}
-
-@keyframes igor {
-  0% {
-    left: 0px;
-  }
-  100% {
-    left: 100px;
-  }
+  left: -50px;
 }
 
 @keyframes animate1 {
@@ -62,24 +53,7 @@
   width: 100%;
   z-index: 11;
   bottom: 0;
-  right: 100px; 
-  animation: vlado 14s linear;
-}
-
-@keyframes vlado {
-  0% {
-    right: 0px;
-  }
-  100% {
-    right: 100px;
-  }
-}
-
-.zid {
-  position: absolute;
-  width: 100%;
-  z-index: 11;
-  bottom: 0;
+  left: 0;
 }
 
 .text {
@@ -105,17 +79,17 @@
 .bg2 {
   opacity: 1;
   width: 100%;
-  height: 80vh;
-	position:absolute;
-	top:0;
+  height: 100vh;
   overflow: hidden;
   background-attachment: fixed;
   background-size: cover;
   animation-delay: 2s;
+  position: absolute;
   bottom: 0;
   left: 0;
   object-fit: cover;
- /* animation: animate 40s linear infinite;*/
+/*   animation: animate 40s linear infinite; */
+
 }
 @keyframes animate {
   0% {
@@ -218,18 +192,18 @@
   top: 0;
   height: 30%;
   width: 100%;
-  animation: oblak 5s linear infinite;
+  animation: oblak 10s linear infinite;
+  /* animation-delay: 1s; */
   z-index: 14;
   opacity: 0.5;
 }
-
 
 @keyframes oblak {
   0% {
     right: 0px;
   }
   50% {
-    right: 65px; /*ovo mijenjam*/
+    right: 45px;
   }
   100% {
     right: 0px;

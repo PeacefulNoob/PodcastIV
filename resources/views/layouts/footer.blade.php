@@ -71,7 +71,7 @@
 
 		                        <ul class="list-unstyled footerLista">
 		                            <li>
-		                                <a href="/podcast">Podcast </a>
+		                                <a href="/sezona/4">Podcast </a>
 		                            </li>
 		                            <li>
 		                                <a href="/post"> Objave</a>
