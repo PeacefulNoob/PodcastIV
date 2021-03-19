@@ -90,7 +90,7 @@ class SezonaController extends Controller
     {
         $sezona= Sezona::findOrFail($sezona->id);
         $sezone= Sezona::all();
-        $epizode= Epizoda::all();
+        $epizode= Epizoda::orderBy('created_at', 'DESC')->get();
 
         return view('site.podcast', compact('sezona','epizode','sezone'));
     }

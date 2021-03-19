@@ -11,7 +11,7 @@ class Sezona extends Model
 
     public function epizoda()
     {
-        return $this->hasMany('App\Epizoda');
+        return $this->hasMany('App\Epizoda')->orderBy('created_at', 'DESC');
     }
     public function user()
     {
